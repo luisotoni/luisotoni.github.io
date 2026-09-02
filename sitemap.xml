@@ -291,23 +291,100 @@
     </url>
 
     <!-- cases Case Studies (PT only - can be expanded later) -->
+    <!-- cases Case Study: Azure Migration -->
     <url>
         <loc>https://luisotoni.github.io/cases/azure-migration.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/cases/azure-migration.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/cases/azure-migration.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/cases/azure-migration.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/cases/azure-migration.html"/>
         <lastmod>2026-09-02</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
     </url>
+    <url>
+        <loc>https://luisotoni.github.io/en/cases/azure-migration.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/cases/azure-migration.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/cases/azure-migration.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/cases/azure-migration.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/cases/azure-migration.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/es/cases/azure-migration.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/cases/azure-migration.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/cases/azure-migration.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/cases/azure-migration.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/cases/azure-migration.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- cases Case Study: M365 Implementation -->
     <url>
         <loc>https://luisotoni.github.io/cases/m365-implementation.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/cases/m365-implementation.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/cases/m365-implementation.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/cases/m365-implementation.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/cases/m365-implementation.html"/>
         <lastmod>2026-09-02</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://luisotoni.github.io/cases/power-platform-automation.html</loc>
+        <loc>https://luisotoni.github.io/en/cases/m365-implementation.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/cases/m365-implementation.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/cases/m365-implementation.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/cases/m365-implementation.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/cases/m365-implementation.html"/>
         <lastmod>2026-09-02</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/es/cases/m365-implementation.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/cases/m365-implementation.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/cases/m365-implementation.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/cases/m365-implementation.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/cases/m365-implementation.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- cases Case Study: Power Platform Automation -->
+    <url>
+        <loc>https://luisotoni.github.io/cases/power-platform-automation.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/cases/power-platform-automation.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/cases/power-platform-automation.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/cases/power-platform-automation.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/cases/power-platform-automation.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/en/cases/power-platform-automation.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/cases/power-platform-automation.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/cases/power-platform-automation.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/cases/power-platform-automation.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/cases/power-platform-automation.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/es/cases/power-platform-automation.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/cases/power-platform-automation.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/cases/power-platform-automation.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/cases/power-platform-automation.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/cases/power-platform-automation.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
 
     <!-- cases Case Study: Copilot Studio Support -->

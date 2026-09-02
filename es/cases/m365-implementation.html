@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementación Microsoft 365 Enterprise - Luís Otoni</title>
+    <meta name="description" content="Implementación completa de Microsoft 365 Enterprise con Exchange Online, Teams, SharePoint, Intune y políticas de seguridad para una organización de 500+ usuarios.">
+    <meta name="keywords" content="Microsoft 365, Exchange Online, Teams, SharePoint, Intune, Seguridad, Compliance">
+    <link rel="canonical" href="https://luisotoni.github.io/es/cases/m365-implementation.html">
+
+    <!-- Hreflang Tags -->
+    <link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/cases/m365-implementation.html" />
+    <link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/cases/m365-implementation.html" />
+    <link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/cases/m365-implementation.html" />
+    <link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/cases/m365-implementation.html" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="../index.html" class="logo">⚡ Luís Otoni</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../about.html">Acerca</a></li>
+                    <li><a href="../cases.html" class="active">Cases</a></li>
+                    <li class="dropdown">
+                        <a href="../services.html">Servicios</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../services/azure-consulting.html"><span class="dropdown-icon">☁️</span> Azure</a></li>
+                            <li><a href="../services/m365-implementation.html"><span class="dropdown-icon">📊</span> Microsoft 365</a></li>
+                            <li><a href="../services/power-platform.html"><span class="dropdown-icon">⚡</span> Power Platform</a></li>
+                            <li><a href="../services/security-compliance.html"><span class="dropdown-icon">🔒</span> Seguridad</a></li>
+                            <li><a href="../services/cloud-architecture.html"><span class="dropdown-icon">🔄</span> Arquitectura</a></li>
+                            <li><a href="../services/training.html"><span class="dropdown-icon">🎓</span> Capacitación</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li class="nav-cta"><a href="../contact.html">Contacto</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button id="theme-toggle" aria-label="Cambiar tema"><span id="theme-icon">🌙</span></button>
+                    <select id="language-selector" aria-label="Seleccionar idioma" onchange="window.location.href=this.value">
+                        <option value="../../cases/m365-implementation.html">Português</option>
+                        <option value="../../en/cases/m365-implementation.html">English</option>
+                        <option value="m365-implementation.html" selected>Español</option>
+                    </select>
+                </div>
+            </div>
+            <button id="mobile-menu-btn" aria-label="Abrir menú móvil">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Project Hero -->
+        <section class="project-hero gradient-indigo">
+            <div class="container">
+                <div class="cases-tags mb-3" style="justify-content: center;">
+                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">Microsoft 365</span>
+                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">Colaboración</span>
+                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">Seguridad</span>
+                </div>
+                <h1>Implementación Microsoft 365 Enterprise</h1>
+                <p>Implementación completa de M365 Enterprise con Exchange Online, Teams, SharePoint, políticas de seguridad, Intune y compliance para una organización con 500+ usuarios.</p>
+            </div>
+        </section>
+
+        <!-- Project Details -->
+        <section>
+            <div class="container">
+                <div class="project-details">
+                    <div class="detail-box">
+                        <h3>🏢 Cliente</h3>
+                        <p>Organización multinacional</p>
+                        <p>500+ usuarios</p>
+                    </div>
+                    <div class="detail-box">
+                        <h3>📅 Duración</h3>
+                        <p>4 meses</p>
+                        <p>2024</p>
+                    </div>
+                    <div class="detail-box">
+                        <h3>👥 Usuarios</h3>
+                        <p>500+ usuarios en 3 países</p>
+                    </div>
+                    <div class="detail-box">
+                        <h3>🎯 Licenciamiento</h3>
+                        <p>Microsoft 365 E3 y E5</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Content -->
+        <section>
+            <div class="container-narrow">
+                <div class="project-section">
+                    <h2>El Desafío</h2>
+                    <p>
+                        La organización utilizaba sistemas de email y colaboración desactualizados, enfrentando:
+                    </p>
+                    <ul>
+                        <li>Un sistema de email legado cercano al fin de su soporte</li>
+                        <li>Falta de herramientas modernas de colaboración y comunicación</li>
+                        <li>Dificultad para el trabajo remoto y la movilidad</li>
+                        <li>Políticas de seguridad inadecuadas</li>
+                        <li>Compartición de archivos insegura</li>
+                        <li>Costos elevados de mantenimiento de servidores</li>
+                        <li>Necesidad de compliance con LGPD y GDPR</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h2>La Solución</h2>
+
+                    <h3>Fase 1: Planificación y Preparación</h3>
+                    <ul>
+                        <li>Assessment del ambiente existente y de los requisitos</li>
+                        <li>Definición de la estrategia de licenciamiento (E3 vs E5)</li>
+                        <li>Planificación de la migración de buzones</li>
+                        <li>Diseño de gobernanza y políticas de seguridad</li>
+                        <li>Creación del plan de comunicación y capacitación</li>
+                    </ul>
+
+                    <h3>Fase 2: Implementación Core</h3>
+                    <ul>
+                        <li>Configuración del tenant de Microsoft 365</li>
+                        <li>Migración de buzones a Exchange Online</li>
+                        <li>Despliegue de SharePoint Online y OneDrive</li>
+                        <li>Rollout de Microsoft Teams como plataforma de colaboración</li>
+                        <li>Configuración de Microsoft Entra ID para gestión de identidades</li>
+                    </ul>
+
+                    <h3>Fase 3: Seguridad y Compliance</h3>
+                    <ul>
+                        <li>Implementación de Multi-Factor Authentication (MFA)</li>
+                        <li>Configuración de políticas de Conditional Access</li>
+                        <li>Setup de Microsoft Defender for Office 365</li>
+                        <li>Implementación de Data Loss Prevention (DLP)</li>
+                        <li>Configuración de políticas de retención y eDiscovery</li>
+                        <li>Setup de Microsoft Intune para gestión de dispositivos</li>
+                    </ul>
+
+                    <h3>Fase 4: Adopción y Capacitación</h3>
+                    <ul>
+                        <li>Programa de capacitación para usuarios finales</li>
+                        <li>Talleres de Teams y SharePoint</li>
+                        <li>Documentación y guías de uso</li>
+                        <li>Programa de champions para impulsar la adopción</li>
+                        <li>Soporte post-implementación</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h2>Resultados Alcanzados</h2>
+                    <div class="grid grid-2">
+                        <div class="card">
+                            <div class="card-icon">👥</div>
+                            <h3 class="card-title">95%</h3>
+                            <p class="card-text">Tasa de adopción de Teams</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">📧</div>
+                            <h3 class="card-title">100%</h3>
+                            <p class="card-text">Buzones migrados con éxito</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">🔒</div>
+                            <h3 class="card-title">85%</h3>
+                            <p class="card-text">Reducción en incidentes de seguridad</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">💰</div>
+                            <h3 class="card-title">50%</h3>
+                            <p class="card-text">Reducción en costos de infraestructura</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h2>Beneficios Entregados</h2>
+                    <ul>
+                        <li>Colaboración moderna con Teams integrado a SharePoint</li>
+                        <li>Trabajo remoto habilitado con seguridad</li>
+                        <li>Compliance con LGPD y GDPR mediante DLP y políticas de retención</li>
+                        <li>Protección avanzada contra phishing y malware</li>
+                        <li>Gestión centralizada de dispositivos móviles</li>
+                        <li>Aumento significativo en la productividad del equipo</li>
+                        <li>Infraestructura 100% cloud gestionada por Microsoft</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h2>Tecnologías Utilizadas</h2>
+                    <div class="cases-tags">
+                        <span class="tag primary">Microsoft 365</span>
+                        <span class="tag primary">Exchange Online</span>
+                        <span class="tag primary">Microsoft Teams</span>
+                        <span class="tag primary">SharePoint Online</span>
+                        <span class="tag">OneDrive for Business</span>
+                        <span class="tag">Microsoft Intune</span>
+                        <span class="tag">Azure AD Premium</span>
+                        <span class="tag">Conditional Access</span>
+                        <span class="tag">MFA</span>
+                        <span class="tag">DLP Policies</span>
+                        <span class="tag">Defender for Office 365</span>
+                        <span class="tag">Compliance Center</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Testimonial -->
+        <section>
+            <div class="container-narrow">
+                <div class="card" style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); color: var(--text-inverse); border: none;">
+                    <h3 style="color: var(--text-inverse); margin-bottom: 1rem;">💬 Testimonio del Cliente</h3>
+                    <p style="font-size: 1.1rem; font-style: italic; margin-bottom: 1rem;">
+                        "La implementación de Microsoft 365 revolucionó nuestra forma de trabajar. El proyecto fue
+                        ejecutado de forma impecable, con mínima interrupción para los usuarios. La adopción superó
+                        ampliamente nuestras expectativas."
+                    </p>
+                    <p style="font-weight: bold;">
+                        — Director de TI, Cliente Multinacional
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="cta">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title">¿Listo para Modernizar su Lugar de Trabajo?</h2>
+                    <p class="section-subtitle">
+                        Hablemos de cómo Microsoft 365 puede transformar la colaboración en su organización.
+                    </p>
+                    <a href="../contact.html" class="btn btn-primary">Contactar</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Back to cases -->
+        <section>
+            <div class="container text-center">
+                <a href="../cases.html" class="btn btn-outline">← Volver al Cases</a>
+            </div>
+        </section>
+    </main>
+
+        <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Luis Otoni</h3>
+                    <p>Cloud Solutions Architect</p>
+                    <p style="font-size: 0.9rem; opacity: 0.8;">Azure | Microsoft 365 | Power Platform</p>
+                    <div class="footer-social mt-3">
+                        <a href="https://linkedin.com/in/luisotoni" class="social-icon" target="_blank" rel="noopener" aria-label="LinkedIn">💼</a>
+                        <a href="https://github.com/luisotoni" class="social-icon" target="_blank" rel="noopener" aria-label="GitHub">🐙</a>
+                        <a href="mailto:luisotoni@outlook.com" class="social-icon" aria-label="Email">✉️</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Servicios</h3>
+                    <ul class="footer-links">
+                        <li><a href="../services/azure-consulting.html">☁️ Azure</a></li>
+                        <li><a href="../services/m365-implementation.html">📊 Microsoft 365</a></li>
+                        <li><a href="../services/power-platform.html">⚡ Power Platform</a></li>
+                        <li><a href="../services/security-compliance.html">🔒 Seguridad</a></li>
+                        <li><a href="../services/cloud-architecture.html">🔄 Arquitectura</a></li>
+                        <li><a href="../services/training.html">🎓 Capacitacion</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Cases</h3>
+                    <ul class="footer-links">
+                        <li><a href="../cases.html">Ver Proyectos</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../about.html">Acerca</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li><a href="../contact.html">Contactame</a></li>
+                        <li><a href="mailto:luisotoni@outlook.com">Email</a></li>
+                        <li><a href="https://linkedin.com/in/luisotoni" target="_blank" rel="noopener">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Luis Otoni. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>
