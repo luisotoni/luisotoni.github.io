@@ -1,4 +1,27 @@
 // ======================
+// ANALYTICS (Google Analytics 4)
+// ======================
+// To activate: create a free GA4 property at https://analytics.google.com,
+// grab its Measurement ID (format "G-XXXXXXXXXX") and paste it below.
+// Until then, this block does nothing — no script is loaded, no data is sent.
+(function () {
+    const GA_MEASUREMENT_ID = ''; // <- paste your "G-XXXXXXXXXX" here
+
+    if (!GA_MEASUREMENT_ID) return;
+
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_MEASUREMENT_ID;
+    document.head.appendChild(script);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { window.dataLayer.push(arguments); }
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', GA_MEASUREMENT_ID);
+})();
+
+// ======================
 // THEME MANAGEMENT
 // ======================
 class ThemeManager {
