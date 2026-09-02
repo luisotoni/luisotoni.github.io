@@ -1,11 +1,8 @@
 // ======================
 // ANALYTICS (Google Analytics 4)
 // ======================
-// To activate: create a free GA4 property at https://analytics.google.com,
-// grab its Measurement ID (format "G-XXXXXXXXXX") and paste it below.
-// Until then, this block does nothing — no script is loaded, no data is sent.
 (function () {
-    const GA_MEASUREMENT_ID = ''; // <- paste your "G-XXXXXXXXXX" here
+    const GA_MEASUREMENT_ID = 'G-J9E90EBL08';
 
     if (!GA_MEASUREMENT_ID) return;
 
