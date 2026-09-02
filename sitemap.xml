@@ -419,5 +419,390 @@
         <priority>0.7</priority>
     </url>
 
+
+    <!-- services auto-added: azure-consulting -->
+    <url>
+        <loc>https://luisotoni.github.io/services/azure-consulting.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/services/azure-consulting.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/services/azure-consulting.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/services/azure-consulting.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/services/azure-consulting.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/en/services/azure-consulting.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/services/azure-consulting.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/services/azure-consulting.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/services/azure-consulting.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/services/azure-consulting.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/es/services/azure-consulting.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/services/azure-consulting.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/services/azure-consulting.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/services/azure-consulting.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/services/azure-consulting.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- services auto-added: cloud-architecture -->
+    <url>
+        <loc>https://luisotoni.github.io/services/cloud-architecture.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/services/cloud-architecture.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/services/cloud-architecture.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/services/cloud-architecture.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/services/cloud-architecture.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/en/services/cloud-architecture.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/services/cloud-architecture.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/services/cloud-architecture.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/services/cloud-architecture.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/services/cloud-architecture.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/es/services/cloud-architecture.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/services/cloud-architecture.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/services/cloud-architecture.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/services/cloud-architecture.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/services/cloud-architecture.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- services auto-added: m365-implementation -->
+    <url>
+        <loc>https://luisotoni.github.io/services/m365-implementation.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/services/m365-implementation.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/services/m365-implementation.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/services/m365-implementation.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/services/m365-implementation.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/en/services/m365-implementation.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/services/m365-implementation.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/services/m365-implementation.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/services/m365-implementation.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/services/m365-implementation.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/es/services/m365-implementation.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/services/m365-implementation.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/services/m365-implementation.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/services/m365-implementation.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/services/m365-implementation.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- services auto-added: power-platform -->
+    <url>
+        <loc>https://luisotoni.github.io/services/power-platform.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/services/power-platform.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/services/power-platform.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/services/power-platform.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/services/power-platform.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/en/services/power-platform.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/services/power-platform.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/services/power-platform.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/services/power-platform.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/services/power-platform.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/es/services/power-platform.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/services/power-platform.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/services/power-platform.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/services/power-platform.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/services/power-platform.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- services auto-added: security-compliance -->
+    <url>
+        <loc>https://luisotoni.github.io/services/security-compliance.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/services/security-compliance.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/services/security-compliance.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/services/security-compliance.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/services/security-compliance.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/en/services/security-compliance.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/services/security-compliance.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/services/security-compliance.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/services/security-compliance.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/services/security-compliance.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/es/services/security-compliance.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/services/security-compliance.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/services/security-compliance.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/services/security-compliance.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/services/security-compliance.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- services auto-added: training -->
+    <url>
+        <loc>https://luisotoni.github.io/services/training.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/services/training.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/services/training.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/services/training.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/services/training.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/en/services/training.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/services/training.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/services/training.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/services/training.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/services/training.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/es/services/training.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/services/training.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/services/training.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/services/training.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/services/training.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- blog auto-added: azure-cost-optimization -->
+    <url>
+        <loc>https://luisotoni.github.io/blog/azure-cost-optimization.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/blog/azure-cost-optimization.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/blog/azure-cost-optimization.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/blog/azure-cost-optimization.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/blog/azure-cost-optimization.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/en/blog/azure-cost-optimization.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/blog/azure-cost-optimization.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/blog/azure-cost-optimization.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/blog/azure-cost-optimization.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/blog/azure-cost-optimization.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/es/blog/azure-cost-optimization.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/blog/azure-cost-optimization.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/blog/azure-cost-optimization.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/blog/azure-cost-optimization.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/blog/azure-cost-optimization.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- blog auto-added: powershell-tutorial -->
+    <url>
+        <loc>https://luisotoni.github.io/blog/powershell-tutorial.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/blog/powershell-tutorial.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/blog/powershell-tutorial.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/blog/powershell-tutorial.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/blog/powershell-tutorial.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/en/blog/powershell-tutorial.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/blog/powershell-tutorial.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/blog/powershell-tutorial.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/blog/powershell-tutorial.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/blog/powershell-tutorial.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/es/blog/powershell-tutorial.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/blog/powershell-tutorial.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/blog/powershell-tutorial.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/blog/powershell-tutorial.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/blog/powershell-tutorial.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- blog auto-added: zero-trust-m365 -->
+    <url>
+        <loc>https://luisotoni.github.io/blog/zero-trust-m365.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/blog/zero-trust-m365.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/blog/zero-trust-m365.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/blog/zero-trust-m365.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/blog/zero-trust-m365.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/en/blog/zero-trust-m365.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/blog/zero-trust-m365.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/blog/zero-trust-m365.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/blog/zero-trust-m365.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/blog/zero-trust-m365.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/es/blog/zero-trust-m365.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/blog/zero-trust-m365.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/blog/zero-trust-m365.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/blog/zero-trust-m365.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/blog/zero-trust-m365.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- cases auto-added: azure-security-implementation -->
+    <url>
+        <loc>https://luisotoni.github.io/cases/azure-security-implementation.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/cases/azure-security-implementation.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/cases/azure-security-implementation.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/cases/azure-security-implementation.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/cases/azure-security-implementation.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/en/cases/azure-security-implementation.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/cases/azure-security-implementation.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/cases/azure-security-implementation.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/cases/azure-security-implementation.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/cases/azure-security-implementation.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/es/cases/azure-security-implementation.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/cases/azure-security-implementation.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/cases/azure-security-implementation.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/cases/azure-security-implementation.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/cases/azure-security-implementation.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- cases auto-added: cloud-identity-solution -->
+    <url>
+        <loc>https://luisotoni.github.io/cases/cloud-identity-solution.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/cases/cloud-identity-solution.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/cases/cloud-identity-solution.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/cases/cloud-identity-solution.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/cases/cloud-identity-solution.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/en/cases/cloud-identity-solution.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/cases/cloud-identity-solution.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/cases/cloud-identity-solution.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/cases/cloud-identity-solution.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/cases/cloud-identity-solution.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/es/cases/cloud-identity-solution.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/cases/cloud-identity-solution.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/cases/cloud-identity-solution.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/cases/cloud-identity-solution.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/cases/cloud-identity-solution.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- cases auto-added: sharepoint-intranet -->
+    <url>
+        <loc>https://luisotoni.github.io/cases/sharepoint-intranet.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/cases/sharepoint-intranet.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/cases/sharepoint-intranet.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/cases/sharepoint-intranet.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/cases/sharepoint-intranet.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/en/cases/sharepoint-intranet.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/cases/sharepoint-intranet.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/cases/sharepoint-intranet.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/cases/sharepoint-intranet.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/cases/sharepoint-intranet.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/es/cases/sharepoint-intranet.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/cases/sharepoint-intranet.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/cases/sharepoint-intranet.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/cases/sharepoint-intranet.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/cases/sharepoint-intranet.html"/>
+        <lastmod>2026-09-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
 </urlset>
 

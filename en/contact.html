@@ -19,7 +19,49 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.min.css">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How long does it take to receive a response?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "I try to respond to all emails within 24 business hours. For urgent projects, please indicate this in the subject line."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you serve international clients?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! I work 100% remotely and serve clients in any timezone. I'm based in São Paulo (GMT-3), but I have flexibility for meetings at times that work for you. For projects in Brazil, I can also make on-site visits when necessary."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How does the consulting process work?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We start with an initial meeting to understand your needs. Then, I prepare a detailed proposal with scope, timeline, and investment. After approval, we start the project."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you offer post-implementation support?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, all my projects include a post-implementation support period. I also offer ongoing support contracts for clients who want long-term partnership."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -327,7 +369,7 @@
         </div>
     </footer>
 
-    <script src="../js/main.js"></script>
+    <script src="../js/main.min.js"></script>
 </body>
 </html>
 

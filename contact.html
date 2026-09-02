@@ -19,7 +19,49 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Quanto tempo leva para receber uma resposta?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Procuro responder todos os emails dentro de 24 horas úteis. Para projetos urgentes, indique isso no assunto da mensagem."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Você atende clientes internacionais?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sim! Trabalho 100% remoto e atendo clientes em qualquer fuso horário. Estou baseado em São Paulo (GMT-3), mas tenho flexibilidade para reuniões em horários que funcionem para você. Para projetos no Brasil, também posso realizar visitas presenciais quando necessário."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Como funciona o processo de consultoria?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Começamos com uma reunião inicial para entender suas necessidades. Depois, elaboro uma proposta detalhada com escopo, timeline e investimento. Após aprovação, iniciamos o projeto."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Oferece suporte pós-implementação?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sim, todos os meus projetos incluem período de suporte pós-implementação. Também ofereço contratos de suporte contínuo para clientes que desejam parceria de longo prazo."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -327,7 +369,7 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 </html>
 
