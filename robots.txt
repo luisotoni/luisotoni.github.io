@@ -1,0 +1,11 @@
+# robots.txt for luisotoni.github.io
+# Luís Otoni - Cloud Specialist | Microsoft 365 | Azure | Power Platform
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://luisotoni.github.io/sitemap.xml
+
+# Crawl-delay (optional, for politeness)
+Crawl-delay: 1

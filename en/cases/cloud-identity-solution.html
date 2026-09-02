@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Identity Enterprise Management - Luís Otoni</title>
+    <meta name="description" content="Cloud identity management implementation with Microsoft Entra ID, SSO, MFA and Conditional Access for complex enterprise environment.">
+    <meta name="keywords" content="Entra ID, Cloud Identity, SSO, MFA, Conditional Access, Microsoft 365, Identity Management">
+    <link rel="canonical" href="https://luisotoni.github.io/en/cases/cloud-identity-solution.html">
+    
+    <!-- Hreflang Tags -->
+    <link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/cases/cloud-identity-solution.html" />
+    <link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/cases/cloud-identity-solution.html" />
+    <link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/cases/cloud-identity-solution.html" />
+    <link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/cases/cloud-identity-solution.html" />
+    
+    <!-- Favicon Emoji -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="../index.html" class="logo">⚡ Luís Otoni</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../cases.html" class="active">Cases</a></li>
+                    <li class="dropdown">
+                        <a href="../services.html">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../services/azure-consulting.html"><span class="dropdown-icon">☁️</span> Azure</a></li>
+                            <li><a href="../services/m365-implementation.html"><span class="dropdown-icon">📊</span> Microsoft 365</a></li>
+                            <li><a href="../services/power-platform.html"><span class="dropdown-icon">⚡</span> Power Platform</a></li>
+                            <li><a href="../services/security-compliance.html"><span class="dropdown-icon">🔒</span> Security</a></li>
+                            <li><a href="../services/cloud-architecture.html"><span class="dropdown-icon">🔄</span> Architecture</a></li>
+                            <li><a href="../services/training.html"><span class="dropdown-icon">🎓</span> Training</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li class="nav-cta"><a href="../contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button id="theme-toggle" aria-label="Toggle theme"><span id="theme-icon">🌙</span></button>
+                    <select id="language-selector" aria-label="Select language" onchange="window.location.href=this.value">
+                        <option value="../../cases/cloud-identity-solution.html">Português</option>
+                        <option value="cloud-identity-solution.html" selected>English</option>
+                        <option value="../../es/cases/cloud-identity-solution.html">Español</option>
+                    </select>
+                </div>
+            </div>
+            <button id="mobile-menu-btn" aria-label="Toggle mobile menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Project Hero -->
+        <section class="project-hero gradient-teal">
+            <div class="container">
+                <div class="cases-tags mb-3" style="justify-content: center;">
+                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">Entra ID</span>
+                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">Identity</span>
+                    <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">Security</span>
+                </div>
+                <h1>Cloud Identity Enterprise Management</h1>
+                <p>Cloud identity management implementation with Microsoft Entra ID, SSO, MFA and Conditional Access for multinational corporate environment.</p>
+            </div>
+        </section>
+
+        <!-- Project Details -->
+        <section>
+            <div class="container">
+                <div class="project-details">
+                    <div class="detail-box">
+                        <h3>🏢 Client</h3>
+                        <p>Manufacturing Multinational</p>
+                        <p>2,000+ employees</p>
+                        <p>5 countries</p>
+                    </div>
+                    <div class="detail-box">
+                        <h3>📅 Duration</h3>
+                        <p>6 months</p>
+                        <p>2024</p>
+                    </div>
+                    <div class="detail-box">
+                        <h3>🛠️ Technologies</h3>
+                        <ul>
+                            <li>Microsoft Entra ID</li>
+                            <li>Entra ID Governance</li>
+                            <li>Conditional Access</li>
+                            <li>MFA / Passwordless</li>
+                        </ul>
+                    </div>
+                    <div class="detail-box">
+                        <h3>📊 Results</h3>
+                        <ul>
+                            <li>SSO for 150+ apps</li>
+                            <li>100% MFA adoption</li>
+                            <li>-80% password tickets</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Content -->
+        <section>
+            <div class="container-narrow">
+                <div class="project-section">
+                    <h2>The Challenge</h2>
+                    <p>
+                        The company operated with multiple Microsoft 365 tenants in different countries, 
+                        resulting in identity silos, fragmented user experience and security risks.
+                        Employees needed to remember multiple passwords and there was no centralized visibility 
+                        over access and suspicious activities.
+                    </p>
+                    <p>
+                        Additionally, SaaS application adoption was growing rapidly, but without an SSO system, 
+                        each new application meant one more credential to manage. The help desk 
+                        was overwhelmed with password reset tickets.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h2>The Solution</h2>
+                    <p>
+                        I designed and implemented a unified cloud identity solution using Microsoft Entra ID 
+                        as the central identity hub with cross-tenant synchronization for consolidated management.
+                    </p>
+                    
+                    <h3>Phase 1: Assessment and Design</h3>
+                    <ul>
+                        <li>Mapping of all M365 tenants and domains</li>
+                        <li>Application inventory and authentication methods</li>
+                        <li>Identity architecture design</li>
+                        <li>UPN suffix strategy definition</li>
+                    </ul>
+
+                    <h3>Phase 2: Entra ID Configuration</h3>
+                    <ul>
+                        <li>Primary tenant configuration with custom domains</li>
+                        <li>Cross-Tenant Synchronization setup</li>
+                        <li>B2B Direct Connect for federation</li>
+                        <li>Entra Connect Health for monitoring</li>
+                    </ul>
+
+                    <h3>Phase 3: Identity Security</h3>
+                    <ul>
+                        <li>MFA rollout for all users</li>
+                        <li>Risk-based Conditional Access policies</li>
+                        <li>Identity Protection for threat detection</li>
+                        <li>Privileged Identity Management for admins</li>
+                    </ul>
+
+                    <h3>Phase 4: Single Sign-On</h3>
+                    <ul>
+                        <li>Integration of 150+ SaaS applications with SAML/OIDC</li>
+                        <li>Enterprise Applications configuration</li>
+                        <li>My Apps portal for users</li>
+                        <li>Automatic provisioning (SCIM) for critical apps</li>
+                    </ul>
+
+                    <h3>Phase 5: Passwordless</h3>
+                    <ul>
+                        <li>Windows Hello for Business</li>
+                        <li>Microsoft Authenticator app</li>
+                        <li>FIDO2 security keys for admins</li>
+                        <li>Self-Service Password Reset (SSPR)</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h2>Results Achieved</h2>
+                    <div class="grid grid-2">
+                        <div class="card">
+                            <div class="card-icon">🔑</div>
+                            <h3 class="card-title">Single Sign-On</h3>
+                            <p class="card-text">150+ applications integrated with SSO, eliminating password fatigue and improving productivity.</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">🛡️</div>
+                            <h3 class="card-title">100% MFA</h3>
+                            <p class="card-text">All 2,000+ users protected with MFA, blocking 99.9% of credential stuffing attacks.</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">📞</div>
+                            <h3 class="card-title">-80% Tickets</h3>
+                            <p class="card-text">80% reduction in password reset tickets with SSPR, freeing up the help desk.</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">😊</div>
+                            <h3 class="card-title">User Experience</h3>
+                            <p class="card-text">User satisfaction NPS rose from 45 to 78 after implementation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h2>Technologies Used</h2>
+                    <div class="cases-tags">
+                        <span class="tag primary">Microsoft Entra ID</span>
+                        <span class="tag primary">Entra ID Governance</span>
+                        <span class="tag">Conditional Access</span>
+                        <span class="tag">MFA</span>
+                        <span class="tag">SAML/OIDC</span>
+                        <span class="tag">Windows Hello</span>
+                        <span class="tag">FIDO2</span>
+                        <span class="tag">Identity Protection</span>
+                        <span class="tag">PIM</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="cta">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title">Need to Modernize Your Identity?</h2>
+                    <p class="section-subtitle">
+                        Let's discuss how to implement a modern cloud identity solution for your organization.
+                    </p>
+                    <a href="../contact.html" class="btn btn-primary">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Back to cases -->
+        <section>
+            <div class="container text-center">
+                <a href="../cases.html" class="btn btn-outline">← Back to cases</a>
+            </div>
+        </section>
+    </main>
+
+        <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Luís Otoni</h3>
+                    <p>Cloud Solutions Architect</p>
+                    <p style="font-size: 0.9rem; opacity: 0.8;">Azure | Microsoft 365 | Power Platform</p>
+                    <div class="footer-social mt-3">
+                        <a href="https://linkedin.com/in/luisotoni" class="social-icon" target="_blank" rel="noopener" aria-label="LinkedIn">💼</a>
+                        <a href="https://github.com/luisotoni" class="social-icon" target="_blank" rel="noopener" aria-label="GitHub">🐙</a>
+                        <a href="mailto:luisotoni@outlook.com" class="social-icon" aria-label="Email">✉️</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="../services/azure-consulting.html">☁️ Azure</a></li>
+                        <li><a href="../services/m365-implementation.html">📊 Microsoft 365</a></li>
+                        <li><a href="../services/power-platform.html">⚡ Power Platform</a></li>
+                        <li><a href="../services/security-compliance.html">🔒 Security</a></li>
+                        <li><a href="../services/cloud-architecture.html">🔄 Architecture</a></li>
+                        <li><a href="../services/training.html">🎓 Training</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Cases</h3>
+                    <ul class="footer-links">
+                        <li><a href="../cases.html">View Projects</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../about.html">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="../contact.html">Get in Touch</a></li>
+                        <li><a href="mailto:luisotoni@outlook.com">Email</a></li>
+                        <li><a href="https://linkedin.com/in/luisotoni" target="_blank" rel="noopener">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Luís Otoni. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>
+
+
+
+

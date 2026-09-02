@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Luís Otoni | Ponte en Contacto</title>
+    <meta name="description" content="Ponte en contacto con Luís Otoni para consultoría en Microsoft Azure, Microsoft 365 y Power Platform. Hablemos de tu próximo proyecto.">
+    <meta name="keywords" content="Contacto, Consultoría Microsoft, Azure, Microsoft 365, Power Platform">
+    <link rel="canonical" href="https://luisotoni.github.io/es/contact.html">
+
+    <!-- Hreflang Tags -->
+    <link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/contact.html" />
+    <link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/contact.html" />
+    <link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/contact.html" />
+    <link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/contact.html" />
+
+    <!-- Favicon Emoji -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">⚡ Luís Otoni</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Sobre Mí</a></li>
+                    <li><a href="cases.html">Cases</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Servicios</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services/azure-consulting.html"><span class="dropdown-icon">☁️</span> Azure</a></li>
+                            <li><a href="services/m365-implementation.html"><span class="dropdown-icon">📊</span> Microsoft 365</a></li>
+                            <li><a href="services/power-platform.html"><span class="dropdown-icon">⚡</span> Power Platform</a></li>
+                            <li><a href="services/security-compliance.html"><span class="dropdown-icon">🔒</span> Seguridad</a></li>
+                            <li><a href="services/cloud-architecture.html"><span class="dropdown-icon">🔄</span> Arquitectura</a></li>
+                            <li><a href="services/training.html"><span class="dropdown-icon">🎓</span> Capacitación</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li class="nav-cta"><a href="contact.html" class="active">Contacto</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button id="theme-toggle" aria-label="Cambiar tema"><span id="theme-icon">🌙</span></button>
+                    <select id="language-selector" aria-label="Seleccionar idioma" onchange="window.location.href=this.value">
+                        <option value="../contact.html">Português</option>
+                        <option value="../en/contact.html">English</option>
+                        <option value="contact.html" selected>Español</option>
+                    </select>
+                </div>
+            </div>
+            <button id="mobile-menu-btn" aria-label="Abrir menú móvil">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="min-height: 40vh;">
+            <div class="container">
+                <div class="hero-content animate-on-scroll text-center">
+                    <h1>Ponte en Contacto</h1>
+                    <p class="hero-description">
+                        Hablemos sobre cómo puedo ayudar a tu negocio
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section>
+            <div class="container-narrow">
+                <div class="section-header">
+                    <h2 class="section-title">Envía un Mensaje</h2>
+                    <p class="section-subtitle">
+                        Completa el formulario y te responderé dentro de 24 horas hábiles.
+                    </p>
+                </div>
+
+                <div id="form-success" class="form-success animate-on-scroll" style="display:none;">
+                    <p><strong>✅ ¡Mensaje enviado con éxito!</strong> Gracias por contactarme — responderé pronto.</p>
+                </div>
+
+                <form id="contact-form" class="contact-form animate-on-scroll" action="https://formsubmit.co/luisotoni@outlook.com" method="POST">
+                    <input type="hidden" name="_subject" value="Nuevo contacto via luisotoni.github.io">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://luisotoni.github.io/es/contact.html?enviado=1">
+                    <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Nombre</label>
+                            <input class="form-input" type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email</label>
+                            <input class="form-input" type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="subject">Asunto</label>
+                        <input class="form-input" type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="message">Mensaje</label>
+                        <textarea class="form-textarea" id="message" name="message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Contact Information -->
+        <section>
+            <div class="container-narrow">
+                <div class="section-header">
+                    <h2 class="section-title">O Contáctame Directamente</h2>
+                    <p class="section-subtitle">
+                        ¿Prefieres otro canal? También estoy disponible aquí.
+                    </p>
+                </div>
+
+                <div class="grid grid-2">
+                    <a href="mailto:luisotoni@outlook.com" class="card card-hover animate-on-scroll text-center">
+                        <div class="card-icon">✉️</div>
+                        <h3 class="card-title">Email</h3>
+                        <p class="card-text">luisotoni@outlook.com</p>
+                    </a>
+
+                    <a href="https://linkedin.com/in/luisotoni" target="_blank" rel="noopener" class="card card-hover animate-on-scroll text-center">
+                        <div class="card-icon">💼</div>
+                        <h3 class="card-title">LinkedIn</h3>
+                        <p class="card-text">linkedin.com/in/luisotoni</p>
+                    </a>
+
+                    <a href="https://github.com/luisotoni" target="_blank" rel="noopener" class="card card-hover animate-on-scroll text-center">
+                        <div class="card-icon">🐙</div>
+                        <h3 class="card-title">GitHub</h3>
+                        <p class="card-text">github.com/luisotoni</p>
+                    </a>
+
+                    <div class="card animate-on-scroll text-center">
+                        <div class="card-icon">🌍</div>
+                        <h3 class="card-title">Servicio Global</h3>
+                        <p class="card-text">Ubicado en São Paulo (GMT-3)<br>Trabajo remoto worldwide</p>
+                    </div>
+                </div>
+
+                <div class="card animate-on-scroll text-center mt-4">
+                    <div class="card-icon">🟢</div>
+                    <h3 class="card-title">Disponibilidad</h3>
+                    <p class="card-text">
+                        Actualmente aceptando nuevos proyectos de consultoría e implementación.<br>
+                        Tiempo de respuesta típico: hasta 24 horas en días laborables.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Contact Me -->
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">¿Por Qué Contactarme?</h2>
+                </div>
+
+                <div class="grid grid-3">
+                    <div class="card animate-on-scroll text-center">
+                        <div class="card-icon">💡</div>
+                        <h3 class="card-title">Consultoría Especializada</h3>
+                        <p class="card-text">
+                            Experiencia práctica en proyectos Microsoft de diversos tamaños y complejidades.
+                        </p>
+                    </div>
+
+                    <div class="card animate-on-scroll text-center">
+                        <div class="card-icon">🚀</div>
+                        <h3 class="card-title">Resultados Comprobados</h3>
+                        <p class="card-text">
+                            Historial de proyectos exitosos con ROI medible y clientes satisfechos.
+                        </p>
+                    </div>
+
+                    <div class="card animate-on-scroll text-center">
+                        <div class="card-icon">🤝</div>
+                        <h3 class="card-title">Asociación a Largo Plazo</h3>
+                        <p class="card-text">
+                            No solo un proyecto, sino una asociación continua para evolucionar tu infraestructura.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section>
+            <div class="container-narrow">
+                <div class="section-header">
+                    <h2 class="section-title">Preguntas Frecuentes</h2>
+                </div>
+
+                <details class="faq-item animate-on-scroll">
+                    <summary class="faq-question">¿Cuánto tiempo tarda en recibir una respuesta?</summary>
+                    <p class="faq-answer">
+                        Procuro responder a todos los correos dentro de 24 horas hábiles. Para proyectos urgentes,
+                        indica esto en el asunto del mensaje.
+                    </p>
+                </details>
+
+                <details class="faq-item animate-on-scroll">
+                    <summary class="faq-question">¿Atiende clientes internacionales?</summary>
+                    <p class="faq-answer">
+                        ¡Sí! Trabajo 100% remoto y atiendo clientes en cualquier zona horaria.
+                        Estoy ubicado en São Paulo (GMT-3), pero tengo flexibilidad para reuniones
+                        en horarios que funcionen para usted. Para proyectos en Brasil, también
+                        puedo realizar visitas presenciales cuando sea necesario.
+                    </p>
+                </details>
+
+                <details class="faq-item animate-on-scroll">
+                    <summary class="faq-question">¿Cómo funciona el proceso de consultoría?</summary>
+                    <p class="faq-answer">
+                        Comenzamos con una reunión inicial para entender tus necesidades. Luego, elaboro una
+                        propuesta detallada con alcance, cronograma e inversión. Después de la aprobación, iniciamos el proyecto.
+                    </p>
+                </details>
+
+                <details class="faq-item animate-on-scroll">
+                    <summary class="faq-question">¿Ofreces soporte post-implementación?</summary>
+                    <p class="faq-answer">
+                        Sí, todos mis proyectos incluyen un período de soporte post-implementación. También ofrezco
+                        contratos de soporte continuo para clientes que desean una asociación a largo plazo.
+                    </p>
+                </details>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section>
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title">¿Listo Para Comenzar?</h2>
+                    <p class="section-subtitle">
+                        Ponte en contacto y discutamos cómo puedo ayudar a tu empresa.
+                    </p>
+                    <a href="mailto:luisotoni@outlook.com" class="btn btn-primary">
+                        Enviar Email
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Luís Otoni</h3>
+                    <p>Cloud Solutions Architect</p>
+                    <p style="font-size: 0.9rem; opacity: 0.8;">Azure | Microsoft 365 | Power Platform</p>
+                    <div class="footer-social mt-3">
+                        <a href="https://linkedin.com/in/luisotoni" class="social-icon" target="_blank" rel="noopener" aria-label="LinkedIn">💼</a>
+                        <a href="https://github.com/luisotoni" class="social-icon" target="_blank" rel="noopener" aria-label="GitHub">🐙</a>
+                        <a href="mailto:luisotoni@outlook.com" class="social-icon" aria-label="Email">✉️</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Servicios</h3>
+                    <ul class="footer-links">
+                        <li><a href="services/azure-consulting.html">☁️ Azure</a></li>
+                        <li><a href="services/m365-implementation.html">📊 Microsoft 365</a></li>
+                        <li><a href="services/power-platform.html">⚡ Power Platform</a></li>
+                        <li><a href="services/security-compliance.html">🔒 Seguridad</a></li>
+                        <li><a href="services/cloud-architecture.html">🔄 Arquitectura</a></li>
+                        <li><a href="services/training.html">🎓 Capacitación</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Cases</h3>
+                    <ul class="footer-links">
+                        <li><a href="cases.html">Ver Proyectos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">Acerca</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contáctame</a></li>
+                        <li><a href="mailto:luisotoni@outlook.com">Email</a></li>
+                        <li><a href="https://linkedin.com/in/luisotoni" target="_blank" rel="noopener">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Luís Otoni. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
+
+

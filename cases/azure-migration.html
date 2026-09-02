@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitetura Azure Cloud Enterprise - Luís Otoni</title>
+    <meta name="description" content="Projeto de implementação completa de infraestrutura cloud no Microsoft Azure. Entra ID, VMs, Storage, networking e disaster recovery.">
+    <link rel="canonical" href="https://luisotoni.github.io/cases/azure-migration.html">
+
+    <!-- Favicon Emoji -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="../index.html" class="logo">⚡ Luís Otoni</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="../index.html" data-i18n="nav_home">Início</a></li>
+                    <li><a href="../about.html" data-i18n="nav_about">Sobre</a></li>
+                    <li><a href="../cases.html" data-i18n="nav_cases">Cases</a></li>
+                    <li class="dropdown">
+                        <a href="../services.html">Serviços</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../services/azure-consulting.html"><span class="dropdown-icon">☁️</span> Azure</a></li>
+                            <li><a href="../services/m365-implementation.html"><span class="dropdown-icon">📊</span> Microsoft 365</a></li>
+                            <li><a href="../services/power-platform.html"><span class="dropdown-icon">⚡</span> Power Platform</a></li>
+                            <li><a href="../services/security-compliance.html"><span class="dropdown-icon">🔒</span> Segurança</a></li>
+                            <li><a href="../services/cloud-architecture.html"><span class="dropdown-icon">🔄</span> Arquitetura</a></li>
+                            <li><a href="../services/training.html"><span class="dropdown-icon">🎓</span> Treinamento</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../blog.html" data-i18n="nav_blog">Blog</a></li>
+                    <li class="nav-cta"><a href="../contact.html" data-i18n="nav_contact">Contato</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button id="theme-toggle" aria-label="Toggle theme"><span id="theme-icon">🌙</span></button>
+                    <select id="language-selector" aria-label="Select language">
+                        <option value="pt">Português</option>
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                    </select>
+                </div>
+            </div>
+            <button id="mobile-menu-btn" aria-label="Toggle mobile menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Project Hero -->
+        <section class="project-hero">
+            <div class="container">
+                <h1>☁️ Arquitetura Azure Cloud Enterprise</h1>
+                <p>Transformação digital através de infraestrutura cloud nativa no Microsoft Azure</p>
+            </div>
+        </section>
+
+        <!-- Project Overview -->
+        <section>
+            <div class="container">
+                <div class="project-details">
+                    <div class="detail-box">
+                        <h3>🏢 Cliente</h3>
+                        <p>Empresa de médio porte no setor de serviços financeiros</p>
+                    </div>
+                    <div class="detail-box">
+                        <h3>📅 Duração</h3>
+                        <p>6 meses (Planejamento e Execução)</p>
+                    </div>
+                    <div class="detail-box">
+                        <h3>👥 Equipe</h3>
+                        <p>4 profissionais (Arquiteto, Administrador, Suporte, Segurança)</p>
+                    </div>
+                    <div class="detail-box">
+                        <h3>💰 Economia</h3>
+                        <p>Redução de 40% nos custos de infraestrutura</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technologies -->
+        <section>
+            <div class="container-narrow">
+                <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--text-primary);">
+                    Tecnologias Utilizadas
+                </h2>
+                <div class="cases-tags">
+                    <span class="tag primary">Microsoft Azure</span>
+                    <span class="tag primary">Azure AD / Entra ID</span>
+                    <span class="tag primary">Azure Virtual Machines</span>
+                    <span class="tag primary">Azure Storage</span>
+                    <span class="tag primary">Azure Virtual Network</span>
+                    <span class="tag primary">Azure Site Recovery</span>
+                    <span class="tag primary">Azure Backup</span>
+                    <span class="tag primary">Azure Monitor</span>
+                    <span class="tag">VPN Gateway</span>
+                    <span class="tag">ExpressRoute</span>
+                    <span class="tag">Azure Policy</span>
+                    <span class="tag">Azure Cost Management</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem -->
+        <section class="project-section">
+            <div class="container-narrow">
+                <h2>🎯 O Desafio</h2>
+                <p>
+                    O cliente precisava de uma infraestrutura cloud moderna e escalável para suportar o crescimento do negócio.
+                    Os principais desafios incluíam:
+                </p>
+                <ul class="service-features">
+                    <li>Necessidade de infraestrutura altamente disponível e escalável</li>
+                    <li>Requisitos rigorosos de disaster recovery e backup</li>
+                    <li>Escalar rapidamente para atender demanda sazonal</li>
+                    <li>Garantir segurança e compliance com regulações do setor</li>
+                    <li>Necessidade de implementar novas tecnologias rapidamente</li>
+                    <li>Equipe de TI precisava focar em inovação, não manutenção</li>
+                    <li>Compliance e segurança no padrão da indústria financeira</li>
+                </ul>
+                <p style="margin-top: 1.5rem;">
+                    A empresa precisava modernizar sua infraestrutura mantendo a continuidade dos negócios e
+                    minimizando o impacto nas operações diárias.
+                </p>
+            </div>
+        </section>
+
+        <!-- Solution -->
+        <section class="project-section">
+            <div class="container-narrow">
+                <h2>💡 A Solução</h2>
+                <p>
+                    Desenvolvemos e implementamos uma arquitetura cloud completa no Microsoft Azure, focando em:
+                </p>
+
+                <div class="card mt-3">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Fase 1: Avaliação e Planejamento</h3>
+                    <ul class="service-features">
+                        <li>Assessment completo dos requisitos de negócio</li>
+                        <li>Identificação de dependências e aplicações críticas</li>
+                        <li>Dimensionamento de recursos Azure necessários</li>
+                        <li>Definição de arquitetura cloud nativa</li>
+                        <li>Planejamento de estratégia de implementação</li>
+                        <li>Análise de custos e ROI</li>
+                    </ul>
+                </div>
+
+                <div class="card mt-3">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Fase 2: Implementação do Ambiente Azure</h3>
+                    <ul class="service-features">
+                        <li>Configuração de Microsoft Entra ID (Azure AD)</li>
+                        <li>Implementação de Azure Virtual Networks com subnets segmentadas</li>
+                        <li>Configuração de conectividade segura (VPN/ExpressRoute)</li>
+                        <li>Implementação de Azure Firewall e Network Security Groups</li>
+                        <li>Configuração de Azure Backup e Site Recovery</li>
+                        <li>Setup de Azure Monitor e Log Analytics</li>
+                    </ul>
+                </div>
+
+                <div class="card mt-3">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Fase 3: Deploy de Workloads</h3>
+                    <ul class="service-features">
+                        <li>Provisionamento de servidores de aplicação em Azure VMs</li>
+                        <li>Implementação de Azure SQL Database</li>
+                        <li>Configuração de Azure Files para armazenamento</li>
+                        <li>Implementação de Azure Virtual Desktop para usuários remotos</li>
+                        <li>Testes extensivos de performance e funcionalidade</li>
+                        <li>Validação de disaster recovery</li>
+                    </ul>
+                </div>
+
+                <div class="card mt-3">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Fase 4: Otimização e Governança</h3>
+                    <ul class="service-features">
+                        <li>Implementação de Azure Policy para governança</li>
+                        <li>Otimização de custos com Reserved Instances</li>
+                        <li>Configuração de Auto-scaling</li>
+                        <li>Implementação de Azure Security Center</li>
+                        <li>Documentação completa e treinamento da equipe</li>
+                        <li>Estabelecimento de processos de operação em cloud</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results -->
+        <section class="project-section">
+            <div class="container-narrow">
+                <h2>📊 Resultados Alcançados</h2>
+                <div class="grid grid-2 mt-3">
+                    <div class="card text-center">
+                        <div class="card-icon">💰</div>
+                        <h3 class="card-title">40%</h3>
+                        <p class="card-text">Redução nos custos de infraestrutura</p>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-icon">⚡</div>
+                        <h3 class="card-title">99.9%</h3>
+                        <p class="card-text">Uptime garantido com SLA Azure</p>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-icon">🚀</div>
+                        <h3 class="card-title">60%</h3>
+                        <p class="card-text">Aumento na velocidade de deploy</p>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-icon">🔒</div>
+                        <h3 class="card-title">100%</h3>
+                        <p class="card-text">Compliance com regulações da indústria</p>
+                    </div>
+                </div>
+
+                <div class="card mt-4">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Benefícios Adicionais</h3>
+                    <ul class="service-features">
+                        <li>Disaster recovery completo com RTO de 4 horas e RPO de 1 hora</li>
+                        <li>Capacidade de escalar recursos sob demanda</li>
+                        <li>Acesso remoto seguro para funcionários via Azure Virtual Desktop</li>
+                        <li>Monitoramento proativo com alertas automatizados</li>
+                        <li>Redução de 70% no tempo de provisionamento de novos recursos</li>
+                        <li>Eliminação de custos de hardware e data center</li>
+                        <li>Equipe de TI pode focar em projetos estratégicos</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Testimonial -->
+        <section>
+            <div class="container-narrow">
+                <div class="card" style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); color: var(--text-inverse); border: none;">
+                    <h3 style="color: var(--text-inverse); margin-bottom: 1rem;">💬 Depoimento do Cliente</h3>
+                    <p style="font-size: 1.1rem; font-style: italic; margin-bottom: 1rem;">
+                        "A implementação da infraestrutura Azure transformou completamente nossa operação de TI. Luís e sua equipe
+                        conduziram o projeto com profissionalismo exemplar, entregando no prazo e com excelência.
+                        Agora temos uma infraestrutura moderna, segura e escalável."
+                    </p>
+                    <p style="font-weight: bold;">
+                        — CTO, Cliente do Setor Financeiro
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Back to cases -->
+        <section>
+            <div class="container text-center">
+                <a href="../cases.html" class="btn btn-outline" data-i18n="back_cases">← Voltar ao Cases</a>
+                <a href="../contact.html" class="btn btn-primary" data-i18n="hero_contact">Entre em Contato</a>
+            </div>
+        </section>
+    </main>
+
+        <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Luís Otoni</h3>
+                    <p>Cloud Solutions Architect</p>
+                    <p style="font-size: 0.9rem; opacity: 0.8;">Azure | Microsoft 365 | Power Platform</p>
+                    <div class="footer-social mt-3">
+                        <a href="https://linkedin.com/in/luisotoni" class="social-icon" target="_blank" rel="noopener" aria-label="LinkedIn">💼</a>
+                        <a href="https://github.com/luisotoni" class="social-icon" target="_blank" rel="noopener" aria-label="GitHub">🐙</a>
+                        <a href="mailto:luisotoni@outlook.com" class="social-icon" aria-label="Email">✉️</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Serviços</h3>
+                    <ul class="footer-links">
+                        <li><a href="../services/azure-consulting.html">☁️ Azure</a></li>
+                        <li><a href="../services/m365-implementation.html">📊 Microsoft 365</a></li>
+                        <li><a href="../services/power-platform.html">⚡ Power Platform</a></li>
+                        <li><a href="../services/security-compliance.html">🔒 Segurança</a></li>
+                        <li><a href="../services/cloud-architecture.html">🔄 Arquitetura</a></li>
+                        <li><a href="../services/training.html">🎓 Treinamento</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Cases</h3>
+                    <ul class="footer-links">
+                        <li><a href="../cases.html">Ver Projetos</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../about.html">Sobre</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <ul class="footer-links">
+                        <li><a href="../contact.html">Fale Comigo</a></li>
+                        <li><a href="mailto:luisotoni@outlook.com">Email</a></li>
+                        <li><a href="https://linkedin.com/in/luisotoni" target="_blank" rel="noopener">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Luís Otoni. <span data-i18n="footer_rights">Todos os direitos reservados</span>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
+
+
+

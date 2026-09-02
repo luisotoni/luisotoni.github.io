@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Luís Otoni | Get in Touch</title>
+    <meta name="description" content="Get in touch with Luís Otoni for Microsoft Azure, Microsoft 365, and Power Platform consulting. Let's discuss your next project.">
+    <meta name="keywords" content="Contact, Microsoft Consulting, Azure, Microsoft 365, Power Platform">
+    <link rel="canonical" href="https://luisotoni.github.io/en/contact.html">
+
+    <!-- Hreflang Tags -->
+    <link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/contact.html" />
+    <link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/contact.html" />
+    <link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/contact.html" />
+    <link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/contact.html" />
+
+    <!-- Favicon Emoji -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">⚡ Luís Otoni</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cases.html">Cases</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services/azure-consulting.html"><span class="dropdown-icon">☁️</span> Azure</a></li>
+                            <li><a href="services/m365-implementation.html"><span class="dropdown-icon">📊</span> Microsoft 365</a></li>
+                            <li><a href="services/power-platform.html"><span class="dropdown-icon">⚡</span> Power Platform</a></li>
+                            <li><a href="services/security-compliance.html"><span class="dropdown-icon">🔒</span> Security</a></li>
+                            <li><a href="services/cloud-architecture.html"><span class="dropdown-icon">🔄</span> Architecture</a></li>
+                            <li><a href="services/training.html"><span class="dropdown-icon">🎓</span> Training</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li class="nav-cta"><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button id="theme-toggle" aria-label="Toggle theme"><span id="theme-icon">🌙</span></button>
+                    <select id="language-selector" aria-label="Select language" onchange="window.location.href=this.value">
+                        <option value="../contact.html">Português</option>
+                        <option value="contact.html" selected>English</option>
+                        <option value="../es/contact.html">Español</option>
+                    </select>
+                </div>
+            </div>
+            <button id="mobile-menu-btn" aria-label="Open mobile menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="min-height: 40vh;">
+            <div class="container">
+                <div class="hero-content animate-on-scroll text-center">
+                    <h1>Get in Touch</h1>
+                    <p class="hero-description">
+                        Let's talk about how I can help your business
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section>
+            <div class="container-narrow">
+                <div class="section-header">
+                    <h2 class="section-title">Send a Message</h2>
+                    <p class="section-subtitle">
+                        Fill out the form below and I'll get back to you within 24 business hours.
+                    </p>
+                </div>
+
+                <div id="form-success" class="form-success animate-on-scroll" style="display:none;">
+                    <p><strong>✅ Message sent successfully!</strong> Thanks for reaching out — I'll reply soon.</p>
+                </div>
+
+                <form id="contact-form" class="contact-form animate-on-scroll" action="https://formsubmit.co/luisotoni@outlook.com" method="POST">
+                    <input type="hidden" name="_subject" value="New contact via luisotoni.github.io">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://luisotoni.github.io/en/contact.html?enviado=1">
+                    <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Name</label>
+                            <input class="form-input" type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email</label>
+                            <input class="form-input" type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="subject">Subject</label>
+                        <input class="form-input" type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea class="form-textarea" id="message" name="message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Contact Information -->
+        <section>
+            <div class="container-narrow">
+                <div class="section-header">
+                    <h2 class="section-title">Or Reach Out Directly</h2>
+                    <p class="section-subtitle">
+                        Prefer another channel? I'm also available here.
+                    </p>
+                </div>
+
+                <div class="grid grid-2">
+                    <a href="mailto:luisotoni@outlook.com" class="card card-hover animate-on-scroll text-center">
+                        <div class="card-icon">✉️</div>
+                        <h3 class="card-title">Email</h3>
+                        <p class="card-text">luisotoni@outlook.com</p>
+                    </a>
+
+                    <a href="https://linkedin.com/in/luisotoni" target="_blank" rel="noopener" class="card card-hover animate-on-scroll text-center">
+                        <div class="card-icon">💼</div>
+                        <h3 class="card-title">LinkedIn</h3>
+                        <p class="card-text">linkedin.com/in/luisotoni</p>
+                    </a>
+
+                    <a href="https://github.com/luisotoni" target="_blank" rel="noopener" class="card card-hover animate-on-scroll text-center">
+                        <div class="card-icon">🐙</div>
+                        <h3 class="card-title">GitHub</h3>
+                        <p class="card-text">github.com/luisotoni</p>
+                    </a>
+
+                    <div class="card animate-on-scroll text-center">
+                        <div class="card-icon">🌍</div>
+                        <h3 class="card-title">Global Service</h3>
+                        <p class="card-text">Based in São Paulo (GMT-3)<br>Remote work worldwide</p>
+                    </div>
+                </div>
+
+                <div class="card animate-on-scroll text-center mt-4">
+                    <div class="card-icon">🟢</div>
+                    <h3 class="card-title">Availability</h3>
+                    <p class="card-text">
+                        Currently accepting new consulting and implementation projects.<br>
+                        Typical response time: within 24 hours on business days.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Contact Me -->
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Why Contact Me?</h2>
+                </div>
+
+                <div class="grid grid-3">
+                    <div class="card animate-on-scroll text-center">
+                        <div class="card-icon">💡</div>
+                        <h3 class="card-title">Specialized Consulting</h3>
+                        <p class="card-text">
+                            Hands-on experience in Microsoft projects of various sizes and complexities.
+                        </p>
+                    </div>
+
+                    <div class="card animate-on-scroll text-center">
+                        <div class="card-icon">🚀</div>
+                        <h3 class="card-title">Proven Results</h3>
+                        <p class="card-text">
+                            Track record of successful projects with measurable ROI and satisfied clients.
+                        </p>
+                    </div>
+
+                    <div class="card animate-on-scroll text-center">
+                        <div class="card-icon">🤝</div>
+                        <h3 class="card-title">Long-Term Partnership</h3>
+                        <p class="card-text">
+                            Not just a project, but an ongoing partnership to evolve your infrastructure.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section>
+            <div class="container-narrow">
+                <div class="section-header">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                </div>
+
+                <details class="faq-item animate-on-scroll">
+                    <summary class="faq-question">How long does it take to receive a response?</summary>
+                    <p class="faq-answer">
+                        I try to respond to all emails within 24 business hours. For urgent projects,
+                        please indicate this in the subject line.
+                    </p>
+                </details>
+
+                <details class="faq-item animate-on-scroll">
+                    <summary class="faq-question">Do you serve international clients?</summary>
+                    <p class="faq-answer">
+                        Yes! I work 100% remotely and serve clients in any timezone.
+                        I'm based in São Paulo (GMT-3), but I have flexibility for meetings
+                        at times that work for you. For projects in Brazil, I can also
+                        make on-site visits when necessary.
+                    </p>
+                </details>
+
+                <details class="faq-item animate-on-scroll">
+                    <summary class="faq-question">How does the consulting process work?</summary>
+                    <p class="faq-answer">
+                        We start with an initial meeting to understand your needs. Then, I prepare a detailed
+                        proposal with scope, timeline, and investment. After approval, we start the project.
+                    </p>
+                </details>
+
+                <details class="faq-item animate-on-scroll">
+                    <summary class="faq-question">Do you offer post-implementation support?</summary>
+                    <p class="faq-answer">
+                        Yes, all my projects include a post-implementation support period. I also offer
+                        ongoing support contracts for clients who want long-term partnership.
+                    </p>
+                </details>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section>
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title">Ready to Get Started?</h2>
+                    <p class="section-subtitle">
+                        Get in touch and let's discuss how I can help your company.
+                    </p>
+                    <a href="mailto:luisotoni@outlook.com" class="btn btn-primary">
+                        Send Email
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Luís Otoni</h3>
+                    <p>Cloud Solutions Architect</p>
+                    <p style="font-size: 0.9rem; opacity: 0.8;">Azure | Microsoft 365 | Power Platform</p>
+                    <div class="footer-social mt-3">
+                        <a href="https://linkedin.com/in/luisotoni" class="social-icon" target="_blank" rel="noopener" aria-label="LinkedIn">💼</a>
+                        <a href="https://github.com/luisotoni" class="social-icon" target="_blank" rel="noopener" aria-label="GitHub">🐙</a>
+                        <a href="mailto:luisotoni@outlook.com" class="social-icon" aria-label="Email">✉️</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services/azure-consulting.html">☁️ Azure</a></li>
+                        <li><a href="services/m365-implementation.html">📊 Microsoft 365</a></li>
+                        <li><a href="services/power-platform.html">⚡ Power Platform</a></li>
+                        <li><a href="services/security-compliance.html">🔒 Security</a></li>
+                        <li><a href="services/cloud-architecture.html">🔄 Architecture</a></li>
+                        <li><a href="services/training.html">🎓 Training</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Cases</h3>
+                    <ul class="footer-links">
+                        <li><a href="cases.html">View Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Get in Touch</a></li>
+                        <li><a href="mailto:luisotoni@outlook.com">Email</a></li>
+                        <li><a href="https://linkedin.com/in/luisotoni" target="_blank" rel="noopener">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Luís Otoni. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
+
+
+
