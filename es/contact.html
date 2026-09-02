@@ -69,14 +69,60 @@
             </div>
         </section>
 
+        <!-- Contact Form -->
+        <section>
+            <div class="container-narrow">
+                <div class="section-header">
+                    <h2 class="section-title">Envía un Mensaje</h2>
+                    <p class="section-subtitle">
+                        Completa el formulario y te responderé dentro de 24 horas hábiles.
+                    </p>
+                </div>
+
+                <div id="form-success" class="form-success animate-on-scroll" style="display:none;">
+                    <p><strong>✅ ¡Mensaje enviado con éxito!</strong> Gracias por contactarme — responderé pronto.</p>
+                </div>
+
+                <form id="contact-form" class="contact-form animate-on-scroll" action="https://formsubmit.co/luisotoni@outlook.com" method="POST">
+                    <input type="hidden" name="_subject" value="Nuevo contacto via luisotoni.com">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://luisotoni.com/es/contact.html?enviado=1">
+                    <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Nombre</label>
+                            <input class="form-input" type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email</label>
+                            <input class="form-input" type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="subject">Asunto</label>
+                        <input class="form-input" type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="message">Mensaje</label>
+                        <textarea class="form-textarea" id="message" name="message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+
         <!-- Contact Information -->
         <section>
             <div class="container-narrow">
                 <div class="section-header">
-                    <h2 class="section-title">Mis Contactos</h2>
+                    <h2 class="section-title">O Contáctame Directamente</h2>
                     <p class="section-subtitle">
-                        Siempre estoy disponible para discutir nuevos proyectos, oportunidades de consultoría
-                        o simplemente intercambiar experiencias sobre tecnologías Microsoft.
+                        ¿Prefieres otro canal? También estoy disponible aquí.
                     </p>
                 </div>
 

@@ -332,3 +332,24 @@ if (window.matchMedia) {
         }
     });
 }
+
+// ======================
+// CONTACT FORM SUCCESS MESSAGE
+// ======================
+(function () {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('enviado') === '1') {
+        const successBox = document.getElementById('form-success');
+        const form = document.getElementById('contact-form');
+        if (successBox) {
+            successBox.style.display = 'block';
+            successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        if (form) {
+            form.style.display = 'none';
+        }
+        params.delete('enviado');
+        const cleanUrl = window.location.pathname + (params.toString() ? '?' + params.toString() : '');
+        window.history.replaceState({}, document.title, cleanUrl);
+    }
+})();
