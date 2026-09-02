@@ -19,7 +19,49 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.min.css">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Cuánto tiempo tarda en recibir una respuesta?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Procuro responder a todos los correos dentro de 24 horas hábiles. Para proyectos urgentes, indica esto en el asunto del mensaje."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Atiende clientes internacionales?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "¡Sí! Trabajo 100% remoto y atiendo clientes en cualquier zona horaria. Estoy ubicado en São Paulo (GMT-3), pero tengo flexibilidad para reuniones en horarios que funcionen para usted. Para proyectos en Brasil, también puedo realizar visitas presenciales cuando sea necesario."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cómo funciona el proceso de consultoría?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Comenzamos con una reunión inicial para entender tus necesidades. Luego, elaboro una propuesta detallada con alcance, cronograma e inversión. Después de la aprobación, iniciamos el proyecto."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Ofreces soporte post-implementación?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí, todos mis proyectos incluyen un período de soporte post-implementación. También ofrezco contratos de soporte continuo para clientes que desean una asociación a largo plazo."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -327,7 +369,7 @@
         </div>
     </footer>
 
-    <script src="../js/main.js"></script>
+    <script src="../js/main.min.js"></script>
 </body>
 </html>
 
