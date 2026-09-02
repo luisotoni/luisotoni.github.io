@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo Reducir Costos en Azure: Guía Completa - Luís Otoni</title>
+    <meta name="description" content="Estrategias prácticas para optimizar costos en Azure sin comprometer performance. Reserved Instances, sizing, automatización y más.">
+    <meta name="keywords" content="Azure Cost, FinOps, Cloud Optimization, Reserved Instances, Azure Advisor, Cost Management">
+    <meta name="author" content="Luís Otoni">
+    <link rel="canonical" href="https://luisotoni.com/es/blog/azure-cost-optimization.html">
+    
+    <!-- Hreflang Tags -->
+    <link rel="alternate" hreflang="pt-BR" href="https://luisotoni.com/blog/azure-cost-optimization.html" />
+    <link rel="alternate" hreflang="en" href="https://luisotoni.com/en/blog/azure-cost-optimization.html" />
+    <link rel="alternate" hreflang="es" href="https://luisotoni.com/es/blog/azure-cost-optimization.html" />
+    <link rel="alternate" hreflang="x-default" href="https://luisotoni.com/blog/azure-cost-optimization.html" />
+    
+    <!-- Favicon Emoji -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="../index.html" class="logo">⚡ Luís Otoni</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../about.html">Acerca</a></li>
+                    <li><a href="../cases.html">Cases</a></li>
+                    <li class="dropdown">
+                        <a href="../services.html">Servicios</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../services/azure-consulting.html"><span class="dropdown-icon">☁️</span> Azure</a></li>
+                            <li><a href="../services/m365-implementation.html"><span class="dropdown-icon">📊</span> Microsoft 365</a></li>
+                            <li><a href="../services/power-platform.html"><span class="dropdown-icon">⚡</span> Power Platform</a></li>
+                            <li><a href="../services/security-compliance.html"><span class="dropdown-icon">🔒</span> Seguridad</a></li>
+                            <li><a href="../services/cloud-architecture.html"><span class="dropdown-icon">🔄</span> Arquitectura</a></li>
+                            <li><a href="../services/training.html"><span class="dropdown-icon">🎓</span> Capacitación</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../blog.html" class="active">Blog</a></li>
+                    <li class="nav-cta"><a href="../contact.html">Contacto</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button id="theme-toggle" aria-label="Cambiar tema"><span id="theme-icon">🌙</span></button>
+                    <select id="language-selector" aria-label="Seleccionar idioma" onchange="window.location.href=this.value">
+                        <option value="../../blog/azure-cost-optimization.html">Português</option>
+                        <option value="../../en/blog/azure-cost-optimization.html">English</option>
+                        <option value="azure-cost-optimization.html" selected>Español</option>
+                    </select>
+                </div>
+            </div>
+            <button id="mobile-menu-btn" aria-label="Abrir menú móvil">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Article Header -->
+        <section class="article-header">
+            <div class="container-narrow">
+                <div class="cases-tags mb-3" style="justify-content: center;">
+                    <span class="tag primary">Azure</span>
+                    <span class="tag">FinOps</span>
+                    <span class="tag">Optimización</span>
+                </div>
+                <h1 class="article-title">Cómo Reducir Costos en Azure: Guía Completa</h1>
+                <div class="article-meta">
+                    <span>👤 Luís Otoni</span>
+                    <span>📅 10 de Noviembre de 2025</span>
+                    <span>⏱️ 12 min de lectura</span>
+                    <span>📁 Azure</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Article Content -->
+        <article class="article-content">
+            <p>
+                Uno de los mayores desafíos de las organizaciones que adoptan cloud es controlar costos. 
+                La facilidad de provisionar recursos puede rápidamente llevar a gastos descontrolados si no 
+                hay gobernanza adecuada. En esta guía, comparto estrategias prácticas que ya apliqué 
+                para reducir costos Azure en hasta 40% sin impactar performance.
+            </p>
+
+            <h2>1. Entienda Su Gasto Actual</h2>
+            <p>
+                Antes de optimizar, necesita entender dónde está gastando. Azure ofrece excelentes 
+                herramientas nativas para esto.
+            </p>
+
+            <h3>Azure Cost Management + Billing</h3>
+            <ul>
+                <li><strong>Cost Analysis:</strong> Visualice costos por servicio, resource group, tag o período</li>
+                <li><strong>Budgets:</strong> Configure alertas cuando gastos alcancen thresholds definidos</li>
+                <li><strong>Cost Alerts:</strong> Notificaciones automáticas sobre anomalías de costo</li>
+                <li><strong>Exports:</strong> Exporte datos para análisis customizados en Power BI</li>
+            </ul>
+
+            <h3>Tags Son Esenciales</h3>
+            <p>
+                Implemente una estrategia de tagging consistente. Recomiendo como mínimo:
+            </p>
+            <ul>
+                <li><code>Environment</code>: prod, dev, test, staging</li>
+                <li><code>CostCenter</code>: centro de costo responsable</li>
+                <li><code>Owner</code>: responsable del recurso</li>
+                <li><code>Project</code>: proyecto o aplicación</li>
+                <li><code>AutoShutdown</code>: si el recurso puede ser apagado fuera del horario</li>
+            </ul>
+
+            <h2>2. Right-Sizing de VMs</h2>
+            <p>
+                Estudios muestran que 30-40% de las VMs en cloud están sobredimensionadas. 
+                Identificar y corregir esto puede generar ahorros significativos.
+            </p>
+
+            <h3>Azure Advisor Recommendations</h3>
+            <p>
+                Azure Advisor analiza su ambiente y sugiere VMs que pueden ser redimensionadas. 
+                Verifique regularmente la sección "Cost" del Advisor.
+            </p>
+
+            <h2>3. Reserved Instances y Savings Plans</h2>
+            <p>
+                Esta es frecuentemente la mayor oportunidad de ahorro - hasta 72% de descuento 
+                comparado a pay-as-you-go.
+            </p>
+
+            <h3>Reserved Instances (RI)</h3>
+            <ul>
+                <li>Compromiso de 1 o 3 años para VMs específicas</li>
+                <li>Descuento de 40-72% dependiendo del término</li>
+                <li>Ideal para workloads predecibles y estables</li>
+            </ul>
+
+            <h2>4. Automatización de Costos</h2>
+            <p>
+                Automatice el gerenciamiento de recursos para evitar desperdicios.
+            </p>
+
+            <h3>Auto-Shutdown de VMs</h3>
+            <p>
+                Configure apagado automático para VMs de dev/test fuera del horario comercial.
+                Ahorro potencial: 65% (si apagado 16h por día + fines de semana).
+            </p>
+
+            <h2>5. Quick Wins Inmediatos</h2>
+            <p>
+                Acciones que puede tomar hoy:
+            </p>
+            <ul>
+                <li>✅ Habilitar Azure Advisor y revisar recomendaciones de costo</li>
+                <li>✅ Configurar budgets y alertas en Cost Management</li>
+                <li>✅ Identificar y eliminar recursos huérfanos</li>
+                <li>✅ Configurar auto-shutdown en VMs de dev/test</li>
+                <li>✅ Revisar VMs con baja utilización de CPU</li>
+                <li>✅ Verificar oportunidades de Reserved Instances</li>
+            </ul>
+
+            <h2>Conclusión</h2>
+            <p>
+                Optimización de costos en Azure es una combinación de visibilidad (saber dónde gasta), 
+                optimización técnica (right-sizing, storage tiers) y compromisos financieros (RIs, Savings Plans).
+            </p>
+            <p>
+                Recuerde: el objetivo no es solo reducir costos, sino optimizar el valor obtenido de cada 
+                dólar invertido en cloud.
+            </p>
+        </article>
+
+        <!-- Article CTA -->
+        <section>
+            <div class="container-narrow">
+                <div class="article-cta animate-on-scroll">
+                    <div class="article-cta-icon">💡</div>
+                    <h3>¿Necesita Ayuda con Este Tema?</h3>
+                    <p>Puedo ayudar a su empresa a implementar estas soluciones de forma profesional y eficiente.</p>
+                    <a href="../contact.html" class="btn btn-primary">Hablar con un Experto</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Share Buttons -->
+        <section>
+            <div class="container-narrow">
+                <h3 style="text-align: center; margin-bottom: 1.5rem; color: var(--text-primary);">
+                    Comparta este artículo
+                </h3>
+                <div class="share-buttons">
+                    <button class="share-btn" data-platform="twitter">🐦 Twitter</button>
+                    <button class="share-btn" data-platform="linkedin">💼 LinkedIn</button>
+                    <button class="share-btn" data-platform="facebook">👍 Facebook</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Back to Blog -->
+        <section>
+            <div class="container text-center">
+                <a href="../blog.html" class="btn btn-outline">← Volver al Blog</a>
+            </div>
+        </section>
+    </main>
+
+        <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Luis Otoni</h3>
+                    <p>Cloud Solutions Architect</p>
+                    <p style="font-size: 0.9rem; opacity: 0.8;">Azure | Microsoft 365 | Power Platform</p>
+                    <div class="footer-social mt-3">
+                        <a href="https://linkedin.com/in/luisotoni" class="social-icon" target="_blank" rel="noopener" aria-label="LinkedIn">💼</a>
+                        <a href="https://github.com/luisotoni" class="social-icon" target="_blank" rel="noopener" aria-label="GitHub">🐙</a>
+                        <a href="mailto:luisotoni@outlook.com" class="social-icon" aria-label="Email">✉️</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Servicios</h3>
+                    <ul class="footer-links">
+                        <li><a href="../services/azure-consulting.html">☁️ Azure</a></li>
+                        <li><a href="../services/m365-implementation.html">📊 Microsoft 365</a></li>
+                        <li><a href="../services/power-platform.html">⚡ Power Platform</a></li>
+                        <li><a href="../services/security-compliance.html">🔒 Seguridad</a></li>
+                        <li><a href="../services/cloud-architecture.html">🔄 Arquitectura</a></li>
+                        <li><a href="../services/training.html">🎓 Capacitacion</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Cases</h3>
+                    <ul class="footer-links">
+                        <li><a href="../cases.html">Ver Proyectos</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../about.html">Acerca</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li><a href="../contact.html">Contactame</a></li>
+                        <li><a href="mailto:luisotoni@outlook.com">Email</a></li>
+                        <li><a href="https://linkedin.com/in/luisotoni" target="_blank" rel="noopener">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Luis Otoni. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>
+
+
+

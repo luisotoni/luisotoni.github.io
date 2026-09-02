@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerShell para Administradores: De Básico a Avanzado - Luís Otoni</title>
+    <meta name="description" content="Tutorial completo de PowerShell para administradores de sistemas. De básico a avanzado, con ejemplos prácticos para Microsoft 365 y Azure.">
+    <meta name="keywords" content="PowerShell, Tutorial, Administración de Sistemas, Microsoft 365, Azure, Automatización">
+    <meta name="author" content="Luís Otoni">
+    <link rel="canonical" href="https://luisotoni.com/es/blog/powershell-tutorial.html">
+    
+    <link rel="alternate" hreflang="pt-BR" href="https://luisotoni.com/blog/powershell-tutorial.html" />
+    <link rel="alternate" hreflang="en" href="https://luisotoni.com/en/blog/powershell-tutorial.html" />
+    <link rel="alternate" hreflang="es" href="https://luisotoni.com/es/blog/powershell-tutorial.html" />
+    <link rel="alternate" hreflang="x-default" href="https://luisotoni.com/blog/powershell-tutorial.html" />
+    
+    <!-- Favicon Emoji -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="../index.html" class="logo">⚡ Luís Otoni</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../about.html">Acerca</a></li>
+                    <li><a href="../cases.html">Cases</a></li>
+                    <li class="dropdown">
+                        <a href="../services.html">Servicios</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../services/azure-consulting.html"><span class="dropdown-icon">☁️</span> Azure</a></li>
+                            <li><a href="../services/m365-implementation.html"><span class="dropdown-icon">📊</span> Microsoft 365</a></li>
+                            <li><a href="../services/power-platform.html"><span class="dropdown-icon">⚡</span> Power Platform</a></li>
+                            <li><a href="../services/security-compliance.html"><span class="dropdown-icon">🔒</span> Seguridad</a></li>
+                            <li><a href="../services/cloud-architecture.html"><span class="dropdown-icon">🔄</span> Arquitectura</a></li>
+                            <li><a href="../services/training.html"><span class="dropdown-icon">🎓</span> Capacitación</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../blog.html" class="active">Blog</a></li>
+                    <li class="nav-cta"><a href="../contact.html">Contacto</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button id="theme-toggle" aria-label="Cambiar tema"><span id="theme-icon">🌙</span></button>
+                    <select id="language-selector" aria-label="Seleccionar idioma" onchange="window.location.href=this.value">
+                        <option value="../../blog/powershell-tutorial.html">Português</option>
+                        <option value="../../en/blog/powershell-tutorial.html">English</option>
+                        <option value="powershell-tutorial.html" selected>Español</option>
+                    </select>
+                </div>
+            </div>
+            <button id="mobile-menu-btn" aria-label="Abrir menú móvil">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="article-header">
+            <div class="container-narrow">
+                <div class="cases-tags mb-3" style="justify-content: center;">
+                    <span class="tag primary">PowerShell</span>
+                    <span class="tag">Automatización</span>
+                    <span class="tag">Tutorial</span>
+                </div>
+                <h1 class="article-title">PowerShell para Administradores: De Básico a Avanzado</h1>
+                <div class="article-meta">
+                    <span>👤 Luís Otoni</span>
+                    <span>📅 28 de Octubre de 2025</span>
+                    <span>⏱️ 20 min de lectura</span>
+                    <span>📁 Automatización</span>
+                </div>
+            </div>
+        </section>
+
+        <article class="article-content">
+            <p>
+                PowerShell es la herramienta más poderosa en el arsenal de un administrador Microsoft. 
+                Sea gestionando Active Directory, Microsoft 365, Azure o Windows Server, dominar PowerShell 
+                es la diferencia entre ejecutar tareas manualmente y automatizar su infraestructura.
+            </p>
+
+            <h2>1. Fundamentos de PowerShell</h2>
+
+            <h3>¿Por qué PowerShell?</h3>
+            <ul>
+                <li><strong>Automatización:</strong> Ejecute tareas repetitivas automáticamente</li>
+                <li><strong>Consistencia:</strong> Los scripts producen resultados predecibles</li>
+                <li><strong>Escala:</strong> Gestione miles de objetos con un comando</li>
+                <li><strong>Integración:</strong> Funciona con Azure, M365, AD, Exchange, y más</li>
+            </ul>
+
+            <h3>Cmdlets: La Base de Todo</h3>
+            <p>Los cmdlets siguen el patrón <strong>Verbo-Sustantivo</strong>:</p>
+            <pre><code>Get-Process      # Obtiene procesos
+Set-Location     # Define ubicación
+New-Item         # Crea nuevo item
+Remove-Item      # Elimina item</code></pre>
+
+            <h2>2. Trabajando con Objetos</h2>
+            <p>PowerShell trabaja con objetos, no texto. Esto cambia todo.</p>
+
+            <h3>Pipeline: El Poder del |</h3>
+            <pre><code># Listar servicios detenidos
+Get-Service | Where-Object {$_.Status -eq 'Stopped'}
+
+# Obtener los 5 procesos que más consumen memoria
+Get-Process | Sort-Object WorkingSet64 -Descending | Select-Object -First 5</code></pre>
+
+            <h2>3. Variables y Tipos de Datos</h2>
+            <pre><code># String
+$nombre = "Luís Otoni"
+
+# Array
+$servidores = @("Server01", "Server02", "Server03")
+
+# Hashtable
+$usuario = @{
+    Nombre = "Juan"
+    Email = "juan@empresa.com"
+}</code></pre>
+
+            <h2>4. Scripts y Funciones</h2>
+            <pre><code>function Get-DiskSpace {
+    [CmdletBinding()]
+    param(
+        [string[]]$ComputerName = $env:COMPUTERNAME
+    )
+    
+    foreach ($computer in $ComputerName) {
+        Get-WmiObject Win32_LogicalDisk -ComputerName $computer -Filter "DriveType=3" |
+        Select-Object @{N='Computer';E={$computer}},
+                      DeviceID,
+                      @{N='SizeGB';E={[math]::Round($_.Size/1GB,2)}},
+                      @{N='FreeGB';E={[math]::Round($_.FreeSpace/1GB,2)}}
+    }
+}</code></pre>
+
+            <h2>5. PowerShell para Microsoft 365</h2>
+            <pre><code># Instalar módulos necesarios
+Install-Module Microsoft.Graph -Scope CurrentUser
+
+# Conectar a Microsoft Graph
+Connect-MgGraph -Scopes "User.Read.All", "Group.ReadWrite.All"
+
+# Listar todos los usuarios
+Get-MgUser -All | Select-Object DisplayName, UserPrincipalName, AccountEnabled</code></pre>
+
+            <h2>6. PowerShell para Azure</h2>
+            <pre><code># Conectar
+Connect-AzAccount
+
+# Listar VMs
+Get-AzVM | Select-Object Name, ResourceGroupName, Location
+
+# Iniciar VM
+Start-AzVM -ResourceGroupName "RG-Produccion" -Name "VM-Web01"</code></pre>
+
+            <h2>Conclusión</h2>
+            <p>
+                PowerShell es una habilidad esencial para cualquier administrador de sistemas Microsoft. 
+                Comience automatizando tareas simples y evolucione gradualmente hacia scripts más complejos.
+            </p>
+        </article>
+
+        <!-- Article CTA -->
+        <section>
+            <div class="container-narrow">
+                <div class="article-cta animate-on-scroll">
+                    <div class="article-cta-icon">💡</div>
+                    <h3>¿Necesita Ayuda con Este Tema?</h3>
+                    <p>Puedo ayudar a su empresa a implementar estas soluciones de forma profesional y eficiente.</p>
+                    <a href="../contact.html" class="btn btn-primary">Hablar con un Experto</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Share Buttons -->
+        <section>
+            <div class="container-narrow">
+                <h3 style="text-align: center; margin-bottom: 1.5rem; color: var(--text-primary);">Comparta este artículo</h3>
+                <div class="share-buttons">
+                    <button class="share-btn" data-platform="twitter">🐦 Twitter</button>
+                    <button class="share-btn" data-platform="linkedin">💼 LinkedIn</button>
+                    <button class="share-btn" data-platform="facebook">👍 Facebook</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container text-center">
+                <a href="../blog.html" class="btn btn-outline">← Volver al Blog</a>
+            </div>
+        </section>
+    </main>
+
+        <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Luis Otoni</h3>
+                    <p>Cloud Solutions Architect</p>
+                    <p style="font-size: 0.9rem; opacity: 0.8;">Azure | Microsoft 365 | Power Platform</p>
+                    <div class="footer-social mt-3">
+                        <a href="https://linkedin.com/in/luisotoni" class="social-icon" target="_blank" rel="noopener" aria-label="LinkedIn">💼</a>
+                        <a href="https://github.com/luisotoni" class="social-icon" target="_blank" rel="noopener" aria-label="GitHub">🐙</a>
+                        <a href="mailto:luisotoni@outlook.com" class="social-icon" aria-label="Email">✉️</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Servicios</h3>
+                    <ul class="footer-links">
+                        <li><a href="../services/azure-consulting.html">☁️ Azure</a></li>
+                        <li><a href="../services/m365-implementation.html">📊 Microsoft 365</a></li>
+                        <li><a href="../services/power-platform.html">⚡ Power Platform</a></li>
+                        <li><a href="../services/security-compliance.html">🔒 Seguridad</a></li>
+                        <li><a href="../services/cloud-architecture.html">🔄 Arquitectura</a></li>
+                        <li><a href="../services/training.html">🎓 Capacitacion</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Cases</h3>
+                    <ul class="footer-links">
+                        <li><a href="../cases.html">Ver Proyectos</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../about.html">Acerca</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li><a href="../contact.html">Contactame</a></li>
+                        <li><a href="mailto:luisotoni@outlook.com">Email</a></li>
+                        <li><a href="https://linkedin.com/in/luisotoni" target="_blank" rel="noopener">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Luis Otoni. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>
+
+
+

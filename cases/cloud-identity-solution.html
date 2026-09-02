@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Identidade Cloud Enterprise - Luís Otoni</title>
+    <meta name="description" content="Projeto de implementação de gestão de identidade cloud com Microsoft Entra ID, SSO, MFA e Conditional Access para ambiente corporativo complexo.">
+    <link rel="canonical" href="https://luisotoni.com/cases/cloud-identity-solution.html">
+
+    <!-- Favicon Emoji -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="../index.html" class="logo">⚡ Luís Otoni</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="../index.html" data-i18n="nav_home">Início</a></li>
+                    <li><a href="../about.html" data-i18n="nav_about">Sobre</a></li>
+                    <li><a href="../cases.html" data-i18n="nav_cases">Cases</a></li>
+                    <li class="dropdown">
+                        <a href="../services.html">Serviços</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../services/azure-consulting.html"><span class="dropdown-icon">☁️</span> Azure</a></li>
+                            <li><a href="../services/m365-implementation.html"><span class="dropdown-icon">📊</span> Microsoft 365</a></li>
+                            <li><a href="../services/power-platform.html"><span class="dropdown-icon">⚡</span> Power Platform</a></li>
+                            <li><a href="../services/security-compliance.html"><span class="dropdown-icon">🔒</span> Segurança</a></li>
+                            <li><a href="../services/cloud-architecture.html"><span class="dropdown-icon">🔄</span> Arquitetura</a></li>
+                            <li><a href="../services/training.html"><span class="dropdown-icon">🎓</span> Treinamento</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../blog.html" data-i18n="nav_blog">Blog</a></li>
+                    <li class="nav-cta"><a href="../contact.html" data-i18n="nav_contact">Contato</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button id="theme-toggle" aria-label="Toggle theme"><span id="theme-icon">🌙</span></button>
+                    <select id="language-selector" aria-label="Select language">
+                        <option value="pt">Português</option>
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                    </select>
+                </div>
+            </div>
+            <button id="mobile-menu-btn" aria-label="Toggle mobile menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Project Hero -->
+        <section class="project-hero gradient-teal">
+            <div class="container">
+                <h1>🔑 Gestão de Identidade Cloud Enterprise</h1>
+                <p>Unificação de identidades com Microsoft Entra ID e segurança enterprise</p>
+            </div>
+        </section>
+
+        <!-- Project Overview -->
+        <section>
+            <div class="container">
+                <div class="project-details">
+                    <div class="detail-box">
+                        <h3>🏢 Cliente</h3>
+                        <p>Grupo empresarial com 3 empresas e múltiplos domínios</p>
+                    </div>
+                    <div class="detail-box">
+                        <h3>📅 Duração</h3>
+                        <p>5 meses (Planejamento + Implementação)</p>
+                    </div>
+                    <div class="detail-box">
+                        <h3>👥 Usuários</h3>
+                        <p>2.500 usuários em 3 tenants Microsoft 365</p>
+                    </div>
+                    <div class="detail-box">
+                        <h3>🔐 SSO Apps</h3>
+                        <p>45 aplicações integradas com Single Sign-On</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technologies -->
+        <section>
+            <div class="container-narrow">
+                <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--text-primary);">
+                    Tecnologias Utilizadas
+                </h2>
+                <div class="cases-tags">
+                    <span class="tag primary">Microsoft Entra ID</span>
+                    <span class="tag primary">Entra ID Governance</span>
+                    <span class="tag primary">Conditional Access</span>
+                    <span class="tag primary">Multi-Factor Authentication</span>
+                    <span class="tag primary">Privileged Identity Management</span>
+                    <span class="tag primary">Azure AD B2B</span>
+                    <span class="tag">SAML / OAuth / OIDC</span>
+                    <span class="tag">Passwordless Authentication</span>
+                    <span class="tag">Seamless SSO</span>
+                    <span class="tag">Identity Protection</span>
+                    <span class="tag">Access Reviews</span>
+                    <span class="tag">Entitlement Management</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem -->
+        <section class="project-section">
+            <div class="container-narrow">
+                <h2>🎯 O Desafio</h2>
+                <p>
+                    O grupo empresarial enfrentava complexidade significativa na gestão de identidades cloud:
+                </p>
+                <ul class="service-features">
+                    <li>3 tenants Microsoft 365 independentes (resultado de aquisições)</li>
+                    <li>Usuários com múltiplas contas em diferentes sistemas</li>
+                    <li>Sem Single Sign-On - usuários decoravam 8+ senhas diferentes</li>
+                    <li>Processo manual de onboarding/offboarding demorado</li>
+                    <li>Acesso de parceiros externos sem controle adequado</li>
+                    <li>Administradores com privilégios permanentes sem auditoria</li>
+                    <li>Aplicações SaaS com autenticação própria</li>
+                    <li>Sem MFA para acessos críticos</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Solution -->
+        <section class="project-section">
+            <div class="container-narrow">
+                <h2>💡 A Solução</h2>
+
+                <div class="card mt-3">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Fase 1: Discovery e Planejamento</h3>
+                    <ul class="service-features">
+                        <li>Inventário completo dos 3 tenants Microsoft 365</li>
+                        <li>Identificação de conflitos de UPN e email</li>
+                        <li>Mapeamento de todas as aplicações e métodos de autenticação</li>
+                        <li>Definição de arquitetura de identidade target</li>
+                        <li>Plano de consolidação de tenants</li>
+                        <li>Comunicação e change management para usuários</li>
+                    </ul>
+                </div>
+
+                <div class="card mt-3">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Fase 2: Configuração do Microsoft Entra ID</h3>
+                    <ul class="service-features">
+                        <li>Configuração do tenant principal com custom domains</li>
+                        <li>Definição de naming convention e UPN strategy</li>
+                        <li>Configuração de licenciamento (Entra ID P2)</li>
+                        <li>Setup de grupos administrativos e RBAC</li>
+                        <li>Configuração de branding customizado</li>
+                        <li>Preparação de break-glass accounts</li>
+                    </ul>
+                </div>
+
+                <div class="card mt-3">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Fase 3: Consolidação de Identidades Cloud</h3>
+                    <ul class="service-features">
+                        <li>Configuração de Cross-Tenant Synchronization</li>
+                        <li>Federação entre tenants com B2B Direct Connect</li>
+                        <li>Setup de Seamless Single Sign-On entre ambientes</li>
+                        <li>Configuração de External Identities</li>
+                        <li>Unificação de grupos e permissões</li>
+                        <li>Passwordless authentication (FIDO2, Windows Hello)</li>
+                    </ul>
+                </div>
+
+                <div class="card mt-3">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Fase 4: Segurança de Identidade</h3>
+                    <ul class="service-features">
+                        <li>Roll-out de MFA para todos os usuários (Microsoft Authenticator)</li>
+                        <li>Implementação de Conditional Access policies</li>
+                        <li>Configuração de Identity Protection (risk-based policies)</li>
+                        <li>Setup de Privileged Identity Management (PIM)</li>
+                        <li>Bloqueio de legacy authentication</li>
+                        <li>Configuração de self-service password reset (SSPR)</li>
+                    </ul>
+                </div>
+
+                <div class="card mt-3">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Fase 5: Integração de Aplicações</h3>
+                    <ul class="service-features">
+                        <li>Integração de 45 aplicações com Entra ID SSO</li>
+                        <li>Configuração de SAML para aplicações enterprise</li>
+                        <li>Setup de OAuth/OIDC para aplicações modernas</li>
+                        <li>Enterprise App Gallery para apps padrão</li>
+                        <li>Federação com SaaS críticos (Salesforce, SAP, etc.)</li>
+                        <li>App Governance para monitoramento</li>
+                    </ul>
+                </div>
+
+                <div class="card mt-3">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Fase 6: Colaboração Externa</h3>
+                    <ul class="service-features">
+                        <li>Configuração de Azure AD B2B para parceiros</li>
+                        <li>Setup de Entitlement Management com access packages</li>
+                        <li>Políticas de convite e aprovação</li>
+                        <li>Access Reviews automáticos para guests</li>
+                        <li>Integração com parceiros críticos</li>
+                        <li>Self-service para solicitação de acesso</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results -->
+        <section class="project-section">
+            <div class="container-narrow">
+                <h2>📊 Resultados Alcançados</h2>
+                <div class="grid grid-2 mt-3">
+                    <div class="card text-center">
+                        <div class="card-icon">🔐</div>
+                        <h3 class="card-title">100%</h3>
+                        <p class="card-text">Usuários com MFA ativo</p>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-icon">🔑</div>
+                        <h3 class="card-title">45</h3>
+                        <p class="card-text">Aplicações com SSO integrado</p>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-icon">⏱️</div>
+                        <h3 class="card-title">90%</h3>
+                        <p class="card-text">Redução no tempo de onboarding</p>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-icon">📞</div>
+                        <h3 class="card-title">75%</h3>
+                        <p class="card-text">Redução em chamados de senha</p>
+                    </div>
+                </div>
+
+                <div class="card mt-4">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Benefícios Entregues</h3>
+                    <ul class="service-features">
+                        <li>Experiência unificada - uma identidade para tudo</li>
+                        <li>Login sem senha no Windows com Windows Hello</li>
+                        <li>Self-service password reset reduzindo help desk</li>
+                        <li>Acesso just-in-time para administradores (PIM)</li>
+                        <li>Detecção automática de sign-ins arriscados</li>
+                        <li>Onboarding de novos funcionários em minutos</li>
+                        <li>Offboarding automatizado com revogação imediata</li>
+                        <li>Colaboração segura com parceiros externos</li>
+                        <li>Auditoria completa de todos os acessos</li>
+                    </ul>
+                </div>
+
+                <div class="card mt-4">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Políticas de Conditional Access Implementadas</h3>
+                    <ul class="service-features">
+                        <li><strong>Require MFA for all users:</strong> Proteção básica para todos</li>
+                        <li><strong>Block legacy auth:</strong> Eliminar protocolos inseguros</li>
+                        <li><strong>Require compliant device:</strong> Acesso a dados sensíveis apenas de devices gerenciados</li>
+                        <li><strong>Block high-risk sign-ins:</strong> Proteção contra credenciais comprometidas</li>
+                        <li><strong>Require approved app:</strong> Acesso mobile apenas via apps corporativos</li>
+                        <li><strong>Session controls:</strong> Timeout e frequência de re-autenticação</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Testimonial -->
+        <section>
+            <div class="container-narrow">
+                <div class="card" style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); color: var(--text-inverse); border: none;">
+                    <h3 style="color: var(--text-inverse); margin-bottom: 1rem;">💬 Depoimento do Cliente</h3>
+                    <p style="font-size: 1.1rem; font-style: italic; margin-bottom: 1rem;">
+                        "Unificar três empresas com sistemas de identidade diferentes parecia impossível. 
+                        O projeto de identidade cloud transformou completamente nossa gestão de acessos. 
+                        Nossos usuários adoraram o SSO - de 8 senhas diferentes para uma única experiência 
+                        de login. E a segurança nunca foi tão robusta com MFA e acesso condicional."
+                    </p>
+                    <p style="font-weight: bold;">
+                        — Diretor de TI, Grupo Empresarial
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Back to cases -->
+        <section>
+            <div class="container text-center">
+                <a href="../cases.html" class="btn btn-outline" data-i18n="back_cases">← Voltar ao Cases</a>
+                <a href="../contact.html" class="btn btn-primary" data-i18n="hero_contact">Entre em Contato</a>
+            </div>
+        </section>
+    </main>
+
+        <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Luís Otoni</h3>
+                    <p>Cloud Solutions Architect</p>
+                    <p style="font-size: 0.9rem; opacity: 0.8;">Azure | Microsoft 365 | Power Platform</p>
+                    <div class="footer-social mt-3">
+                        <a href="https://linkedin.com/in/luisotoni" class="social-icon" target="_blank" rel="noopener" aria-label="LinkedIn">💼</a>
+                        <a href="https://github.com/luisotoni" class="social-icon" target="_blank" rel="noopener" aria-label="GitHub">🐙</a>
+                        <a href="mailto:luisotoni@outlook.com" class="social-icon" aria-label="Email">✉️</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Serviços</h3>
+                    <ul class="footer-links">
+                        <li><a href="../services/azure-consulting.html">☁️ Azure</a></li>
+                        <li><a href="../services/m365-implementation.html">📊 Microsoft 365</a></li>
+                        <li><a href="../services/power-platform.html">⚡ Power Platform</a></li>
+                        <li><a href="../services/security-compliance.html">🔒 Segurança</a></li>
+                        <li><a href="../services/cloud-architecture.html">🔄 Arquitetura</a></li>
+                        <li><a href="../services/training.html">🎓 Treinamento</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Cases</h3>
+                    <ul class="footer-links">
+                        <li><a href="../cases.html">Ver Projetos</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../about.html">Sobre</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <ul class="footer-links">
+                        <li><a href="../contact.html">Fale Comigo</a></li>
+                        <li><a href="mailto:luisotoni@outlook.com">Email</a></li>
+                        <li><a href="https://linkedin.com/in/luisotoni" target="_blank" rel="noopener">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Luís Otoni. <span data-i18n="footer_rights">Todos os direitos reservados</span>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
+
+
+

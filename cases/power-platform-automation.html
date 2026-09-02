@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automação com Power Platform - Luís Otoni</title>
+    <meta name="description" content="Projeto de automação de processos com Power Apps, Power Automate e Power BI, reduzindo tempo de processos em 60%.">
+    <link rel="canonical" href="https://luisotoni.com/cases/power-platform-automation.html">
+
+    <!-- Favicon Emoji -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="../index.html" class="logo">⚡ Luís Otoni</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="../index.html" data-i18n="nav_home">Início</a></li>
+                    <li><a href="../about.html" data-i18n="nav_about">Sobre</a></li>
+                    <li><a href="../cases.html" data-i18n="nav_cases">Cases</a></li>
+                    <li class="dropdown">
+                        <a href="../services.html">Serviços</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../services/azure-consulting.html"><span class="dropdown-icon">☁️</span> Azure</a></li>
+                            <li><a href="../services/m365-implementation.html"><span class="dropdown-icon">📊</span> Microsoft 365</a></li>
+                            <li><a href="../services/power-platform.html"><span class="dropdown-icon">⚡</span> Power Platform</a></li>
+                            <li><a href="../services/security-compliance.html"><span class="dropdown-icon">🔒</span> Segurança</a></li>
+                            <li><a href="../services/cloud-architecture.html"><span class="dropdown-icon">🔄</span> Arquitetura</a></li>
+                            <li><a href="../services/training.html"><span class="dropdown-icon">🎓</span> Treinamento</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../blog.html" data-i18n="nav_blog">Blog</a></li>
+                    <li class="nav-cta"><a href="../contact.html" data-i18n="nav_contact">Contato</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button id="theme-toggle" aria-label="Toggle theme"><span id="theme-icon">🌙</span></button>
+                    <select id="language-selector" aria-label="Select language">
+                        <option value="pt">Português</option>
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                    </select>
+                </div>
+            </div>
+            <button id="mobile-menu-btn" aria-label="Toggle mobile menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-hero gradient-orange">
+            <div class="container">
+                <h1>⚡ Automação com Power Platform</h1>
+                <p>Transformação digital através de low-code e automação de processos</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="project-details">
+                    <div class="detail-box">
+                        <h3>🏢 Cliente</h3>
+                        <p>Empresa de manufatura com 200+ funcionários</p>
+                    </div>
+                    <div class="detail-box">
+                        <h3>📅 Duração</h3>
+                        <p>3 meses (Desenvolvimento e Deploy)</p>
+                    </div>
+                    <div class="detail-box">
+                        <h3>⚡ Automações</h3>
+                        <p>15 processos automatizados</p>
+                    </div>
+                    <div class="detail-box">
+                        <h3>⏱️ Economia de Tempo</h3>
+                        <p>60% de redução no tempo de processos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-narrow">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <img src="../images/PowerPlatform_scalable.svg" alt="Microsoft Power Platform" style="width: 140px; height: 140px;">
+                </div>
+                <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--text-primary);">
+                    Tecnologias Utilizadas
+                </h2>
+                <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;">
+                    <div style="text-align: center;">
+                        <img src="../images/PowerApps_scalable.svg" alt="Power Apps" style="width: 56px; height: 56px;">
+                        <p style="font-size: 0.8rem; margin-top: 0.5rem; color: var(--text-secondary);">Power Apps</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <img src="../images/PowerAutomate_scalable.svg" alt="Power Automate" style="width: 56px; height: 56px;">
+                        <p style="font-size: 0.8rem; margin-top: 0.5rem; color: var(--text-secondary);">Power Automate</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <img src="../images/PowerBI_scalable.svg" alt="Power BI" style="width: 56px; height: 56px;">
+                        <p style="font-size: 0.8rem; margin-top: 0.5rem; color: var(--text-secondary);">Power BI</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <img src="../images/Dataverse_scalable.svg" alt="Dataverse" style="width: 56px; height: 56px;">
+                        <p style="font-size: 0.8rem; margin-top: 0.5rem; color: var(--text-secondary);">Dataverse</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <img src="../images/AIBuilder_scalable.svg" alt="AI Builder" style="width: 56px; height: 56px;">
+                        <p style="font-size: 0.8rem; margin-top: 0.5rem; color: var(--text-secondary);">AI Builder</p>
+                    </div>
+                </div>
+                <div class="cases-tags">
+                    <span class="tag primary">Power Apps</span>
+                    <span class="tag primary">Power Automate</span>
+                    <span class="tag primary">Power BI</span>
+                    <span class="tag primary">Dataverse</span>
+                    <span class="tag">SharePoint</span>
+                    <span class="tag">Microsoft Forms</span>
+                    <span class="tag">AI Builder</span>
+                    <span class="tag">Custom Connectors</span>
+                    <span class="tag">Azure Logic Apps</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <div class="container-narrow">
+                <h2>🎯 O Desafio</h2>
+                <p>
+                    A empresa enfrentava ineficiências em diversos processos manuais:
+                </p>
+                <ul class="service-features">
+                    <li>Processos de aprovação lentos e baseados em papel</li>
+                    <li>Entrada manual de dados com alta taxa de erros</li>
+                    <li>Falta de visibilidade sobre status de processos</li>
+                    <li>Relatórios manuais consumindo horas de trabalho</li>
+                    <li>Comunicação fragmentada entre departamentos</li>
+                    <li>Dificuldade em rastrear métricas de performance</li>
+                    <li>Processos inconsistentes entre equipes</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <div class="container-narrow">
+                <h2>💡 A Solução</h2>
+
+                <div class="card mt-3">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">1. Aplicativos Power Apps Desenvolvidos</h3>
+                    <ul class="service-features">
+                        <li><strong>App de Solicitação de Materiais:</strong> Canvas app para requisições com aprovação automática</li>
+                        <li><strong>App de Gestão de Manutenção:</strong> Model-driven app integrado com Dataverse</li>
+                        <li><strong>App de Inspeção de Qualidade:</strong> Mobile app com captura de fotos e assinaturas</li>
+                        <li><strong>Portal de RH:</strong> Self-service para colaboradores com integração a sistemas legados</li>
+                        <li><strong>App de Gestão de Projetos:</strong> Acompanhamento de tarefas e prazos</li>
+                    </ul>
+                </div>
+
+                <div class="card mt-3">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">2. Automações Power Automate Implementadas</h3>
+                    <ul class="service-features">
+                        <li><strong>Aprovações Automáticas:</strong> Workflow de aprovações em múltiplos níveis com notificações</li>
+                        <li><strong>Sincronização de Dados:</strong> Integração entre SharePoint, Dataverse e SQL Server</li>
+                        <li><strong>Processamento de Documentos:</strong> OCR com AI Builder para extração de dados</li>
+                        <li><strong>Notificações Inteligentes:</strong> Alertas via Teams, email e SMS baseados em eventos</li>
+                        <li><strong>Geração de Relatórios:</strong> Automação de reports semanais e mensais</li>
+                        <li><strong>Onboarding de Funcionários:</strong> Processo automatizado de integração</li>
+                    </ul>
+                </div>
+
+                <div class="card mt-3">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">3. Dashboards Power BI Criados</h3>
+                    <ul class="service-features">
+                        <li><strong>Dashboard Operacional:</strong> Métricas em tempo real de produção</li>
+                        <li><strong>Dashboard de RH:</strong> Análise de headcount, turnover e performance</li>
+                        <li><strong>Dashboard Financeiro:</strong> KPIs financeiros e forecasting</li>
+                        <li><strong>Dashboard de Qualidade:</strong> Tracking de defeitos e ações corretivas</li>
+                    </ul>
+                </div>
+
+                <div class="card mt-3">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">4. Governança e Adoção</h3>
+                    <ul class="service-features">
+                        <li>Implementação de Center of Excellence (CoE) Kit</li>
+                        <li>Políticas de DLP para proteção de dados</li>
+                        <li>Environment strategy (Dev, Test, Prod)</li>
+                        <li>Treinamento de citizen developers</li>
+                        <li>Documentação e guias de melhores práticas</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <div class="container-narrow">
+                <h2>📊 Resultados Alcançados</h2>
+                <div class="grid grid-2 mt-3">
+                    <div class="card text-center">
+                        <div class="card-icon">⏱️</div>
+                        <h3 class="card-title">60%</h3>
+                        <p class="card-text">Redução no tempo de processos</p>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-icon">📉</div>
+                        <h3 class="card-title">80%</h3>
+                        <p class="card-text">Redução de erros manuais</p>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-icon">💰</div>
+                        <h3 class="card-title">$150K</h3>
+                        <p class="card-text">Economia anual em custos operacionais</p>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-icon">📱</div>
+                        <h3 class="card-title">15</h3>
+                        <p class="card-text">Apps e automações implementadas</p>
+                    </div>
+                </div>
+
+                <div class="card mt-4">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Impactos no Negócio</h3>
+                    <ul class="service-features">
+                        <li>Aprovações reduzidas de 5 dias para 24 horas</li>
+                        <li>Visibilidade em tempo real de todos os processos</li>
+                        <li>Eliminação de 90% dos formulários em papel</li>
+                        <li>Satisfação dos funcionários aumentou 40%</li>
+                        <li>Decisões baseadas em dados com dashboards ao vivo</li>
+                        <li>Compliance automatizado com regulações da indústria</li>
+                        <li>Capacidade de escalar sem contratar desenvolvedores</li>
+                        <li>ROI positivo em 6 meses</li>
+                    </ul>
+                </div>
+
+                <div class="card mt-4">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Exemplo: Processo de Requisição de Materiais</h3>
+                    <p style="margin-bottom: 1rem;"><strong>Antes:</strong></p>
+                    <ul style="list-style: none; padding-left: 1rem; margin-bottom: 1.5rem;">
+                        <li>✗ Formulário em papel preenchido manualmente</li>
+                        <li>✗ Aprovações físicas de múltiplos gerentes (5-7 dias)</li>
+                        <li>✗ Entrada manual no sistema de ERP</li>
+                        <li>✗ Sem rastreamento de status</li>
+                        <li>✗ Erros frequentes causando retrabalho</li>
+                    </ul>
+                    <p style="margin-bottom: 1rem;"><strong>Depois:</strong></p>
+                    <ul style="list-style: none; padding-left: 1rem;">
+                        <li>✓ App mobile com validação automática</li>
+                        <li>✓ Aprovações digitais com notificações (< 24h)</li>
+                        <li>✓ Integração automática com ERP</li>
+                        <li>✓ Dashboard de status em tempo real</li>
+                        <li>✓ Zero erros de entrada de dados</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-narrow">
+                <div class="card" style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); color: var(--text-inverse); border: none;">
+                    <h3 style="color: var(--text-inverse); margin-bottom: 1rem;">💬 Depoimento do Cliente</h3>
+                    <p style="font-size: 1.1rem; font-style: italic; margin-bottom: 1rem;">
+                        "A implementação de Power Platform transformou nossa operação. Processos que levavam dias
+                        agora são concluídos em horas. O melhor é que agora temos cidadãos desenvolvedores em
+                        nossa equipe capazes de criar suas próprias soluções."
+                    </p>
+                    <p style="font-weight: bold;">
+                        — COO, Empresa de Manufatura
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container text-center">
+                <a href="../cases.html" class="btn btn-outline" data-i18n="back_cases">← Voltar ao Cases</a>
+                <a href="../contact.html" class="btn btn-primary" data-i18n="hero_contact">Entre em Contato</a>
+            </div>
+        </section>
+    </main>
+
+        <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Luís Otoni</h3>
+                    <p>Cloud Solutions Architect</p>
+                    <p style="font-size: 0.9rem; opacity: 0.8;">Azure | Microsoft 365 | Power Platform</p>
+                    <div class="footer-social mt-3">
+                        <a href="https://linkedin.com/in/luisotoni" class="social-icon" target="_blank" rel="noopener" aria-label="LinkedIn">💼</a>
+                        <a href="https://github.com/luisotoni" class="social-icon" target="_blank" rel="noopener" aria-label="GitHub">🐙</a>
+                        <a href="mailto:luisotoni@outlook.com" class="social-icon" aria-label="Email">✉️</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Serviços</h3>
+                    <ul class="footer-links">
+                        <li><a href="../services/azure-consulting.html">☁️ Azure</a></li>
+                        <li><a href="../services/m365-implementation.html">📊 Microsoft 365</a></li>
+                        <li><a href="../services/power-platform.html">⚡ Power Platform</a></li>
+                        <li><a href="../services/security-compliance.html">🔒 Segurança</a></li>
+                        <li><a href="../services/cloud-architecture.html">🔄 Arquitetura</a></li>
+                        <li><a href="../services/training.html">🎓 Treinamento</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Cases</h3>
+                    <ul class="footer-links">
+                        <li><a href="../cases.html">Ver Projetos</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../about.html">Sobre</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <ul class="footer-links">
+                        <li><a href="../contact.html">Fale Comigo</a></li>
+                        <li><a href="mailto:luisotoni@outlook.com">Email</a></li>
+                        <li><a href="https://linkedin.com/in/luisotoni" target="_blank" rel="noopener">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Luís Otoni. <span data-i18n="footer_rights">Todos os direitos reservados</span>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
+
+
+
