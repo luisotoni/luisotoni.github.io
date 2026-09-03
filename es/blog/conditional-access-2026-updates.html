@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Access en 2026: Qué Cambió - Luís Otoni</title>
+    <meta name="description" content="Resumen de los principales cambios en Conditional Access anunciados por Microsoft en 2026 — seguridad de agentes de IA, enforcement de exclusiones, passkeys y más, con fuentes oficiales y checklist de acción.">
+    <meta name="keywords" content="Conditional Access, Microsoft Entra, Entra ID, Seguridad, MFA, Passkeys, Zero Trust">
+    <meta name="author" content="Luís Otoni">
+    <link rel="canonical" href="https://luisotoni.github.io/es/blog/conditional-access-2026-updates.html">
+
+    <!-- Hreflang Tags -->
+    <link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/blog/conditional-access-2026-updates.html" />
+    <link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/blog/conditional-access-2026-updates.html" />
+    <link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/blog/conditional-access-2026-updates.html" />
+    <link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/blog/conditional-access-2026-updates.html" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="../../css/style.min.css">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Conditional Access en 2026: Qué Cambió",
+        "description": "Resumen de los principales cambios en Conditional Access anunciados por Microsoft en 2026 — seguridad de agentes de IA, enforcement de exclusiones, passkeys y más, con fuentes oficiales y checklist de acción.",
+        "image": "https://luisotoni.github.io/images/og-image.jpg",
+        "author": {
+            "@type": "Person",
+            "name": "Luís Otoni",
+            "url": "https://luisotoni.github.io/about.html"
+        },
+        "publisher": {
+            "@type": "Person",
+            "name": "Luís Otoni"
+        },
+        "datePublished": "2026-09-03",
+        "dateModified": "2026-09-03",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://luisotoni.github.io/es/blog/conditional-access-2026-updates.html"
+        },
+        "inLanguage": "es"
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="../index.html" class="logo">⚡ Luís Otoni</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../about.html">Acerca</a></li>
+                    <li><a href="../cases.html">Cases</a></li>
+                    <li class="dropdown">
+                        <a href="../services.html">Servicios</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../services/azure-consulting.html"><span class="dropdown-icon">☁️</span> Azure</a></li>
+                            <li><a href="../services/m365-implementation.html"><span class="dropdown-icon">📊</span> Microsoft 365</a></li>
+                            <li><a href="../services/power-platform.html"><span class="dropdown-icon">⚡</span> Power Platform</a></li>
+                            <li><a href="../services/security-compliance.html"><span class="dropdown-icon">🔒</span> Seguridad</a></li>
+                            <li><a href="../services/cloud-architecture.html"><span class="dropdown-icon">🔄</span> Arquitectura</a></li>
+                            <li><a href="../services/training.html"><span class="dropdown-icon">🎓</span> Capacitación</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../blog.html" class="active">Blog</a></li>
+                    <li class="nav-cta"><a href="../contact.html">Contacto</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button id="theme-toggle" aria-label="Cambiar tema"><span id="theme-icon">🌙</span></button>
+                    <select id="language-selector" aria-label="Seleccionar idioma" onchange="window.location.href=this.value">
+                        <option value="../../blog/conditional-access-2026-updates.html">Português</option>
+                        <option value="../../en/blog/conditional-access-2026-updates.html">English</option>
+                        <option value="conditional-access-2026-updates.html" selected>Español</option>
+                    </select>
+                </div>
+            </div>
+            <button id="mobile-menu-btn" aria-label="Abrir menú móvil">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Article Header -->
+        <section class="article-header">
+            <div class="container-narrow">
+                <div class="cases-tags mb-3" style="justify-content: center;">
+                    <span class="tag primary">Conditional Access</span>
+                    <span class="tag">Microsoft Entra</span>
+                    <span class="tag">Seguridad</span>
+                </div>
+                <h1 class="article-title">Conditional Access en 2026: Qué Cambió</h1>
+                <div class="article-meta">
+                    <span>👤 Luís Otoni</span>
+                    <span>📅 3 de Septiembre de 2026</span>
+                    <span>⏱️ 9 min de lectura</span>
+                    <span>📁 Seguridad</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Article Content -->
+        <article class="article-content">
+            <p>
+                Microsoft cambió más en Conditional Access en 2026 que en cualquier año reciente — y buena
+                parte de esos cambios altera el comportamiento de políticas que ya están en producción en tus
+                clientes, sin que nadie necesite tocar nada. Reuní aquí los cambios que realmente importan,
+                qué implica cada uno en la práctica, y qué vale la pena revisar ahora.
+            </p>
+
+            <h2>1. Seguridad para agentes de IA</h2>
+            <p>
+                Conditional Access ganó controles específicos para cuentas de <strong>agentes de IA</strong>
+                (Copilot agents y escenarios similares). Ahora es posible incluir o excluir agentes de forma
+                granular en las políticas, aplicar reglas basadas en el riesgo del agente, y exigir dispositivo
+                compatible — incluso en escenarios con Windows 365 for Agents.
+            </p>
+            <p>
+                Esto llegó acompañado de nuevos planes de licencia ("Conditional Access for agents" y
+                "ID Protection for agents"), disponibles vía Microsoft Agent 365 y Microsoft 365 E7. El
+                rollout comenzó a inicios de julio de 2026 y se esperaba que concluyera a inicios de agosto.
+            </p>
+            <p>
+                <strong>Implicación práctica:</strong> si la empresa ya usa agentes de IA con cuentas propias
+                (no solo usuarios humanos interactuando con Copilot), esas cuentas probablemente están fuera
+                del alcance de las políticas actuales de Conditional Access. Vale la pena mapear qué agentes
+                existen en el tenant y decidir si entran en las mismas políticas que los usuarios o en
+                políticas dedicadas.
+            </p>
+
+            <h2>2. Enforcement más estricto en políticas "Todos los recursos" con exclusiones</h2>
+            <p>
+                Desde el <strong>15 de junio de 2026</strong>, las políticas de Conditional Access que apuntan
+                a "All resources" pasaron a aplicarse también a los sign-ins de client applications, incluso
+                cuando existen exclusiones de recurso configuradas en la política.
+            </p>
+            <p>
+                <strong>Implicación práctica:</strong> esto cierra una brecha real. Antes, una exclusión de
+                recurso específica podía, sin intención, dejar pasar escenarios de client app que deberían
+                estar cubiertos por la política general. Si tú (o algún cliente) tienen políticas
+                "All resources" combinadas con exclusiones, el comportamiento pudo haber cambiado
+                silenciosamente en junio — vale la pena probar de nuevo, no asumir que sigue igual.
+            </p>
+
+            <h2>3. Conditional Access pasa a aplicar en el registro de credenciales</h2>
+            <p>
+                A partir del <strong>13 de julio de 2026</strong>, las políticas que apuntan a la acción
+                "Register security info" también se aplican al aprovisionamiento de Windows Hello for
+                Business y al registro de macOS Platform Single Sign-on — escenarios que antes quedaban
+                fuera del alcance de estas políticas.
+            </p>
+            <p>
+                <strong>Implicación práctica:</strong> si tienes una política restrictiva sobre
+                "Register security info" (por ejemplo, exigiendo red confiable o dispositivo administrado),
+                ahora alcanza más escenarios de los que alcanzaba antes de julio. Vale la pena validar que
+                los usuarios legítimos no queden bloqueados al aprovisionar Windows Hello o macOS SSO.
+            </p>
+
+            <h2>4. Passkeys como autenticación predeterminada</h2>
+            <p>
+                Microsoft está impulsando <strong>passkeys</strong> como método de autenticación predeterminado
+                a lo largo de 2026, parte de una ola más amplia de actualizaciones de seguridad en Entra ID
+                (que también incluye reemplazar Custom controls por External MFA).
+            </p>
+            <p>
+                <strong>Implicación práctica:</strong> la recomendación oficial es auditar las políticas de
+                Conditional Access existentes antes del rollout completo, específicamente para garantizar que
+                los endpoints de servicio backend no queden bloqueados sin querer durante el enrollment de
+                passkey — uno de los conflictos más citados por quienes ya pasaron por esta transición.
+            </p>
+
+            <h2>5. SSPR solo aceptará métodos formalmente registrados</h2>
+            <p>
+                A partir del <strong>9 de noviembre de 2026</strong>, el self-service password reset dejará
+                de aceptar números de teléfono o correos que solo existen en el directorio, pero que el
+                usuario nunca registró formalmente como método de autenticación.
+            </p>
+            <p>
+                <strong>Implicación práctica:</strong> este es el cambio con mayor potencial de generar una
+                ola de tickets de soporte si no se comunica a tiempo. Vale la pena correr un reporte de
+                cuántos usuarios dependen hoy de métodos no registrados para SSPR, y lanzar una campaña de
+                registro antes de noviembre — no después.
+            </p>
+
+            <h2>6. Nueva página de License Usage</h2>
+            <p>
+                El admin center de Microsoft Entra ganó una página de visibilidad de uso de licencia
+                (Microsoft Entra ID P1, P2 y Suite), cruzada con métricas de uso real de funciones como
+                Conditional Access y risk-based Conditional Access.
+            </p>
+            <p>
+                <strong>Implicación práctica:</strong> es una herramienta útil para justificar un upgrade
+                de licenciamiento con datos reales de uso, en lugar de estimaciones — vale la pena usarla
+                en la próxima conversación sobre presupuesto de seguridad.
+            </p>
+
+            <h2>Qué Hacer Ahora</h2>
+            <ul class="service-features">
+                <li>Mapear qué agentes de IA existen en el tenant y decidir su cobertura de política</li>
+                <li>Revisar (y volver a probar) políticas "All resources" que tienen exclusiones de recurso</li>
+                <li>Validar que las políticas sobre "Register security info" no bloqueen el aprovisionamiento legítimo de Windows Hello o macOS SSO</li>
+                <li>Auditar las políticas de CA en busca de conflictos con el enrollment de passkey</li>
+                <li>Identificar cuántos usuarios dependen de métodos no registrados para SSPR, antes del 9 de noviembre</li>
+                <li>Usar la página de License Usage para respaldar decisiones de licenciamiento</li>
+            </ul>
+
+            <h2>Fuentes Oficiales</h2>
+            <ul class="service-features">
+                <li><a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-july-2026/4534631" target="_blank" rel="noopener">What's New in Microsoft Entra: July 2026 — Microsoft Tech Community</a></li>
+                <li><a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/upcoming-conditional-access-change-improved-enforcement-for-policies-with-resour/4488925" target="_blank" rel="noopener">Upcoming Conditional Access change: Improved enforcement for policies with resource exclusions — Microsoft Tech Community</a></li>
+                <li><a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/microsoft-entra-id-security-updates-what-organizations-need-to-do-now/4522024" target="_blank" rel="noopener">Microsoft Entra ID security updates: What organizations need to do now — Microsoft Tech Community</a></li>
+                <li><a href="https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-strengths" target="_blank" rel="noopener">Overview of Conditional Access Authentication Strengths — Microsoft Learn</a></li>
+                <li><a href="https://learn.microsoft.com/en-us/entra/fundamentals/whats-new" target="_blank" rel="noopener">Microsoft Entra releases and announcements — Microsoft Learn</a></li>
+            </ul>
+
+            <p>
+                <strong>Nota:</strong> algunas fechas mencionadas arriba (como el cambio de SSPR en noviembre)
+                son anuncios de cambios futuros — confirma siempre el estado actual en la documentación
+                oficial antes de actuar en producción.
+            </p>
+        </article>
+
+        <!-- Article CTA -->
+        <section>
+            <div class="container-narrow">
+                <div class="article-cta animate-on-scroll">
+                    <div class="article-cta-icon">🔒</div>
+                    <h3>¿Necesita Revisar sus Políticas de Conditional Access?</h3>
+                    <p>Puedo ayudar a su empresa a auditar y ajustar las políticas de acuerdo con estos cambios, con seguridad y sin bloquear usuarios legítimos.</p>
+                    <a href="../contact.html" class="btn btn-primary">Hablar con un Especialista</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Share Buttons -->
+        <section>
+            <div class="container-narrow">
+                <h3 style="text-align: center; margin-bottom: 1.5rem; color: var(--text-primary);">
+                    Comparte este artículo
+                </h3>
+                <div class="share-buttons">
+                    <button class="share-btn" data-platform="twitter">🐦 Twitter</button>
+                    <button class="share-btn" data-platform="linkedin">💼 LinkedIn</button>
+                    <button class="share-btn" data-platform="facebook">👍 Facebook</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Back to Blog -->
+        <section>
+            <div class="container text-center">
+                <a href="../blog.html" class="btn btn-outline">← Volver al Blog</a>
+            </div>
+        </section>
+    </main>
+
+        <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Luis Otoni</h3>
+                    <p>Cloud Solutions Architect</p>
+                    <p style="font-size: 0.9rem; opacity: 0.8;">Azure | Microsoft 365 | Power Platform</p>
+                    <div class="footer-social mt-3">
+                        <a href="https://linkedin.com/in/luisotoni" class="social-icon" target="_blank" rel="noopener" aria-label="LinkedIn">💼</a>
+                        <a href="https://github.com/luisotoni" class="social-icon" target="_blank" rel="noopener" aria-label="GitHub">🐙</a>
+                        <a href="mailto:luisotoni@outlook.com" class="social-icon" aria-label="Email">✉️</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Servicios</h3>
+                    <ul class="footer-links">
+                        <li><a href="../services/azure-consulting.html">☁️ Azure</a></li>
+                        <li><a href="../services/m365-implementation.html">📊 Microsoft 365</a></li>
+                        <li><a href="../services/power-platform.html">⚡ Power Platform</a></li>
+                        <li><a href="../services/security-compliance.html">🔒 Seguridad</a></li>
+                        <li><a href="../services/cloud-architecture.html">🔄 Arquitectura</a></li>
+                        <li><a href="../services/training.html">🎓 Capacitacion</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Cases</h3>
+                    <ul class="footer-links">
+                        <li><a href="../cases.html">Ver Proyectos</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../about.html">Acerca</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li><a href="../contact.html">Contactame</a></li>
+                        <li><a href="mailto:luisotoni@outlook.com">Email</a></li>
+                        <li><a href="https://linkedin.com/in/luisotoni" target="_blank" rel="noopener">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Luis Otoni. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.min.js"></script>
+</body>
+</html>
