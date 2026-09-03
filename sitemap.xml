@@ -804,5 +804,37 @@
         <priority>0.7</priority>
     </url>
 
+    <!-- blog Post: Conditional Access 2026 Updates -->
+    <url>
+        <loc>https://luisotoni.github.io/blog/conditional-access-2026-updates.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/blog/conditional-access-2026-updates.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/blog/conditional-access-2026-updates.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/blog/conditional-access-2026-updates.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/blog/conditional-access-2026-updates.html"/>
+        <lastmod>2026-09-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/en/blog/conditional-access-2026-updates.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/blog/conditional-access-2026-updates.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/blog/conditional-access-2026-updates.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/blog/conditional-access-2026-updates.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/blog/conditional-access-2026-updates.html"/>
+        <lastmod>2026-09-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://luisotoni.github.io/es/blog/conditional-access-2026-updates.html</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://luisotoni.github.io/blog/conditional-access-2026-updates.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://luisotoni.github.io/en/blog/conditional-access-2026-updates.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://luisotoni.github.io/es/blog/conditional-access-2026-updates.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://luisotoni.github.io/blog/conditional-access-2026-updates.html"/>
+        <lastmod>2026-09-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
 </urlset>
 
