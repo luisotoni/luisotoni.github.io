@@ -39,6 +39,9 @@
     --cat-azure: #0078d4;
     --cat-power: #742774;
     --cat-security: #107c10;
+    --cat-m365: #d83b01;
+    --cat-cloud: #4f52b2;
+    --cat-training: #ca5010;
 }
 
 :root[data-theme="dark"] {
@@ -78,6 +81,9 @@
     --cat-azure: #0078d4;
     --cat-power: #b06ab0;
     --cat-security: #3fbf3f;
+    --cat-m365: #ff8a5c;
+    --cat-cloud: #8388e0;
+    --cat-training: #e28743;
 }
 
 /* ======================
@@ -246,8 +252,10 @@ nav {
     left: 50%;
     transform: translateX(-50%) translateY(10px);
     min-width: 220px;
-    background: var(--bg-card);
-    border: 1px solid var(--border-color);
+    background: var(--glass-bg);
+    backdrop-filter: blur(18px) saturate(160%);
+    -webkit-backdrop-filter: blur(18px) saturate(160%);
+    border: 1px solid var(--glass-border);
     border-radius: 12px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
     opacity: 0;
@@ -469,12 +477,34 @@ nav {
 }
 
 .hero-stack {
-    font-size: 1.15rem;
-    font-weight: 500;
-    color: var(--primary);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
     margin-bottom: 1.5rem;
-    letter-spacing: 0.5px;
 }
+
+.stack-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px) saturate(160%);
+    -webkit-backdrop-filter: blur(10px) saturate(160%);
+    border: 1px solid var(--glass-border);
+}
+
+.stack-chip .icon {
+    color: var(--chip-color, var(--primary));
+}
+
+.stack-chip-azure { --chip-color: var(--cat-azure); border-color: rgba(0, 120, 212, 0.35); }
+.stack-chip-m365 { --chip-color: var(--cat-m365); border-color: rgba(216, 59, 1, 0.35); }
+.stack-chip-power { --chip-color: var(--cat-power); border-color: rgba(116, 39, 116, 0.35); }
 
 .hero-description {
     font-size: 1.1rem;
@@ -598,19 +628,28 @@ nav {
     top: 10%;
     right: -10%;
     animation-delay: 0s;
+    border-color: rgba(0, 120, 212, 0.35);
 }
+
+.hero-badge:nth-child(1) .icon { color: var(--cat-azure); }
 
 .hero-badge:nth-child(2) {
     bottom: 20%;
     right: -15%;
     animation-delay: 1s;
+    border-color: rgba(216, 59, 1, 0.35);
 }
+
+.hero-badge:nth-child(2) .icon { color: var(--cat-m365); }
 
 .hero-badge:nth-child(3) {
     bottom: 5%;
     left: -10%;
     animation-delay: 2s;
+    border-color: rgba(116, 39, 116, 0.35);
 }
+
+.hero-badge:nth-child(3) .icon { color: var(--cat-power); }
 
 @keyframes float-badge {
     0%, 100% { transform: translateY(0); }
@@ -1268,6 +1307,22 @@ section:nth-child(even) {
     border-radius: 0;
 }
 
+/* Main services grid: category colors (Azure / M365 / Power Platform / Security / Cloud / Training) */
+#services-grid .service-card:nth-child(1) .service-icon { background: var(--cat-azure); }
+#services-grid .service-card:nth-child(2) .service-icon {
+    background: conic-gradient(from 90deg, #f25022 90deg, #7fba00 90deg 180deg, #00a4ef 180deg 270deg, #ffb900 270deg);
+}
+#services-grid .service-card:nth-child(4) .service-icon { background: var(--cat-security); }
+#services-grid .service-card:nth-child(5) .service-icon { background: var(--cat-cloud); }
+#services-grid .service-card:nth-child(6) .service-icon { background: var(--cat-training); }
+
+#services-grid .service-card:nth-child(1):hover { border-color: rgba(0, 120, 212, 0.4); }
+#services-grid .service-card:nth-child(2):hover { border-color: rgba(216, 59, 1, 0.35); }
+#services-grid .service-card:nth-child(3):hover { border-color: var(--cat-power); }
+#services-grid .service-card:nth-child(4):hover { border-color: rgba(16, 124, 16, 0.4); }
+#services-grid .service-card:nth-child(5):hover { border-color: var(--cat-cloud); }
+#services-grid .service-card:nth-child(6):hover { border-color: var(--cat-training); }
+
 .service-title {
     font-size: 1.5rem;
     font-weight: 600;
@@ -1665,7 +1720,9 @@ footer {
         left: -100%;
         width: 100%;
         height: calc(100vh - 70px);
-        background-color: var(--bg-card);
+        background-color: var(--glass-bg);
+        backdrop-filter: blur(20px) saturate(160%);
+        -webkit-backdrop-filter: blur(20px) saturate(160%);
         flex-direction: column;
         justify-content: flex-start;
         padding: 2rem;
