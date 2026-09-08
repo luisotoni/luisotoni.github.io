@@ -1024,7 +1024,7 @@ section:nth-child(even) {
     height: 52px;
     border-radius: 12px;
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-    color: var(--text-inverse);
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1109,7 +1109,7 @@ section:nth-child(even) {
     align-items: center;
     justify-content: center;
     font-size: 7rem;
-    color: var(--text-inverse);
+    color: #ffffff;
 }
 
 /* Gradient Variations for Cards */
@@ -1155,8 +1155,21 @@ section:nth-child(even) {
 
 .tag.primary {
     background-color: var(--primary);
-    color: var(--text-inverse);
+    color: #ffffff;
 }
+
+/* Category color system - shared by cases images/heroes, blog images/meta and service heroes */
+.cat-azure { background: linear-gradient(135deg, var(--cat-azure) 0%, #005a9e 100%) !important; }
+.cat-m365 { background: linear-gradient(135deg, var(--cat-m365) 0%, #a52d00 100%) !important; }
+.cat-power { background: linear-gradient(135deg, var(--cat-power) 0%, #4a1a4a 100%) !important; }
+.cat-security { background: linear-gradient(135deg, var(--cat-security) 0%, #0b5c0b 100%) !important; }
+.cat-cloud { background: linear-gradient(135deg, var(--cat-cloud) 0%, #33356e 100%) !important; }
+.cat-training { background: linear-gradient(135deg, var(--cat-training) 0%, #8a3a0c 100%) !important; }
+
+.cases-card:has(.cat-azure) .tag.primary { background-color: var(--cat-azure); }
+.cases-card:has(.cat-m365) .tag.primary { background-color: var(--cat-m365); }
+.cases-card:has(.cat-power) .tag.primary { background-color: var(--cat-power); }
+.cases-card:has(.cat-security) .tag.primary { background-color: var(--cat-security); }
 
 /* ======================
    BLOG CARDS
@@ -1186,7 +1199,7 @@ section:nth-child(even) {
     align-items: center;
     justify-content: center;
     font-size: 7rem;
-    color: var(--text-inverse);
+    color: #ffffff;
 }
 
 .blog-content {
@@ -1195,6 +1208,49 @@ section:nth-child(even) {
     display: flex;
     flex-direction: column;
 }
+
+/* Blog category colors, keyed off the existing data-category attribute */
+.blog-card[data-category="azure"] .blog-image { background: linear-gradient(135deg, var(--cat-azure) 0%, #005a9e 100%); }
+.blog-card[data-category="m365"] .blog-image { background: linear-gradient(135deg, var(--cat-m365) 0%, #a52d00 100%); }
+.blog-card[data-category="power-platform"] .blog-image { background: linear-gradient(135deg, var(--cat-power) 0%, #4a1a4a 100%); }
+.blog-card[data-category="security"] .blog-image { background: linear-gradient(135deg, var(--cat-security) 0%, #0b5c0b 100%); }
+.blog-card[data-category="tutorial"] .blog-image { background: linear-gradient(135deg, var(--cat-training) 0%, #8a3a0c 100%); }
+
+.blog-card[data-category="azure"] .blog-meta span:nth-child(2),
+.blog-card[data-category="azure"] .blog-category,
+.blog-card[data-category="azure"] .cases-tags .tag:first-child { color: var(--cat-azure); }
+.blog-card[data-category="m365"] .blog-meta span:nth-child(2),
+.blog-card[data-category="m365"] .blog-category,
+.blog-card[data-category="m365"] .cases-tags .tag:first-child { color: var(--cat-m365); }
+.blog-card[data-category="power-platform"] .blog-meta span:nth-child(2),
+.blog-card[data-category="power-platform"] .blog-category,
+.blog-card[data-category="power-platform"] .cases-tags .tag:first-child { color: var(--cat-power); }
+.blog-card[data-category="security"] .blog-meta span:nth-child(2),
+.blog-card[data-category="security"] .blog-category,
+.blog-card[data-category="security"] .cases-tags .tag:first-child { color: var(--cat-security); }
+.blog-card[data-category="tutorial"] .blog-meta span:nth-child(2),
+.blog-card[data-category="tutorial"] .blog-category,
+.blog-card[data-category="tutorial"] .cases-tags .tag:first-child { color: var(--cat-training); }
+
+.blog-card .blog-meta span:nth-child(2),
+.blog-card .blog-category {
+    font-weight: 600;
+}
+
+.blog-card .cases-tags .tag:first-child {
+    font-weight: 600;
+}
+
+.category-filter[data-category="azure"].active,
+.category-filter[data-category="azure"]:hover { background-color: var(--cat-azure); border-color: var(--cat-azure); }
+.category-filter[data-category="m365"].active,
+.category-filter[data-category="m365"]:hover { background-color: var(--cat-m365); border-color: var(--cat-m365); }
+.category-filter[data-category="power-platform"].active,
+.category-filter[data-category="power-platform"]:hover { background-color: var(--cat-power); border-color: var(--cat-power); }
+.category-filter[data-category="security"].active,
+.category-filter[data-category="security"]:hover { background-color: var(--cat-security); border-color: var(--cat-security); }
+.category-filter[data-category="tutorial"].active,
+.category-filter[data-category="tutorial"]:hover { background-color: var(--cat-training); border-color: var(--cat-training); }
 
 .blog-meta {
     display: flex;
@@ -1286,7 +1342,7 @@ section:nth-child(even) {
     height: 64px;
     border-radius: 16px;
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-    color: var(--text-inverse);
+    color: #ffffff;
     margin: 0 auto 1.25rem;
     display: flex;
     justify-content: center;
@@ -1617,14 +1673,14 @@ footer {
 .project-hero {
     padding: 4rem 0;
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-    color: var(--text-inverse);
+    color: #ffffff;
     text-align: center;
 }
 
 .project-hero h1 {
     font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: 1rem;
-    color: var(--text-inverse);
+    color: #ffffff;
 }
 
 .project-hero p {
