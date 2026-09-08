@@ -32,8 +32,8 @@
     --shadow-xl: 0 16px 32px rgba(0, 0, 0, 0.18);
 
     /* Glass (used sparingly: sticky header, floating hero badges) */
-    --glass-bg: rgba(255, 255, 255, 0.72);
-    --glass-border: rgba(255, 255, 255, 0.5);
+    --glass-bg: rgba(255, 255, 255, 0.88);
+    --glass-border: rgba(255, 255, 255, 0.6);
 
     /* Category colors (Microsoft product colors, used on skill cards) */
     --cat-azure: #0078d4;
@@ -74,8 +74,8 @@
     --shadow-xl: 0 16px 32px rgba(0, 0, 0, 0.6);
 
     /* Glass (used sparingly: sticky header, floating hero badges) */
-    --glass-bg: rgba(30, 30, 30, 0.6);
-    --glass-border: rgba(255, 255, 255, 0.12);
+    --glass-bg: rgba(30, 30, 30, 0.82);
+    --glass-border: rgba(255, 255, 255, 0.16);
 
     /* Category colors (Microsoft product colors, used on skill cards) */
     --cat-azure: #0078d4;
@@ -133,6 +133,27 @@ a:hover {
         animation-iteration-count: 1 !important;
         transition-duration: 0.001ms !important;
         scroll-behavior: auto !important;
+    }
+}
+
+/* Browsers without backdrop-filter support (e.g. some Firefox Android
+   builds) would otherwise show only the translucent glass background
+   with no blur behind it - unreadable over busy content. Fall back to
+   a fully opaque surface there instead. */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    header,
+    .dropdown-menu,
+    .hero-badge,
+    .stack-chip {
+        background: var(--bg-card);
+    }
+}
+
+@media (max-width: 968px) {
+    @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+        .nav-menu {
+            background-color: var(--bg-card);
+        }
     }
 }
 
