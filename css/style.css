@@ -30,6 +30,15 @@
     --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.12);
     --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.15);
     --shadow-xl: 0 16px 32px rgba(0, 0, 0, 0.18);
+
+    /* Glass (used sparingly: sticky header, floating hero badges) */
+    --glass-bg: rgba(255, 255, 255, 0.72);
+    --glass-border: rgba(255, 255, 255, 0.5);
+
+    /* Category colors (Microsoft product colors, used on skill cards) */
+    --cat-azure: #0078d4;
+    --cat-power: #742774;
+    --cat-security: #107c10;
 }
 
 :root[data-theme="dark"] {
@@ -60,6 +69,15 @@
     --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.4);
     --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.5);
     --shadow-xl: 0 16px 32px rgba(0, 0, 0, 0.6);
+
+    /* Glass (used sparingly: sticky header, floating hero badges) */
+    --glass-bg: rgba(30, 30, 30, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.12);
+
+    /* Category colors (Microsoft product colors, used on skill cards) */
+    --cat-azure: #0078d4;
+    --cat-power: #b06ab0;
+    --cat-security: #3fbf3f;
 }
 
 /* ======================
@@ -101,6 +119,17 @@ a:hover {
     color: var(--primary-hover);
 }
 
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
 /* ======================
    CONTAINER
    ====================== */
@@ -122,7 +151,10 @@ a:hover {
    ====================== */
 
 header {
-    background-color: var(--bg-card);
+    background-color: var(--glass-bg);
+    backdrop-filter: blur(16px) saturate(160%);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+    border-bottom: 1px solid var(--glass-border);
     box-shadow: var(--shadow-md);
     position: sticky;
     top: 0;
@@ -369,7 +401,7 @@ nav {
     right: -20%;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(0, 120, 212, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(0, 120, 212, 0.16) 0%, transparent 70%);
     border-radius: 50%;
     animation: float 8s ease-in-out infinite;
 }
@@ -381,7 +413,7 @@ nav {
     left: -10%;
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(80, 230, 255, 0.08) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(80, 230, 255, 0.14) 0%, transparent 70%);
     border-radius: 50%;
     animation: float 10s ease-in-out infinite reverse;
 }
@@ -499,7 +531,7 @@ nav {
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid var(--bg-card);
-    box-shadow: var(--shadow-xl);
+    box-shadow: var(--shadow-xl), 0 0 0 1px rgba(0, 120, 212, 0.08), 0 30px 60px -25px rgba(0, 120, 212, 0.45);
     transition: transform 0.3s ease;
 }
 
@@ -546,7 +578,9 @@ nav {
 
 .hero-badge {
     position: absolute;
-    background: var(--bg-card);
+    background: var(--glass-bg);
+    backdrop-filter: blur(14px) saturate(160%);
+    -webkit-backdrop-filter: blur(14px) saturate(160%);
     padding: 0.5rem 1rem;
     border-radius: 25px;
     box-shadow: var(--shadow-lg);
@@ -557,7 +591,7 @@ nav {
     align-items: center;
     gap: 0.5rem;
     animation: float-badge 4s ease-in-out infinite;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--glass-border);
 }
 
 .hero-badge:nth-child(1) {
@@ -859,14 +893,14 @@ nav {
 }
 
 .btn-primary {
-    background-color: var(--primary);
+    background: linear-gradient(120deg, var(--primary) 0%, var(--secondary) 100%);
     color: var(--text-inverse);
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-sm), 0 8px 20px -10px rgba(0, 120, 212, 0.5);
 }
 
 .btn-primary:hover {
-    background-color: var(--primary-hover);
-    box-shadow: var(--shadow-md);
+    background: linear-gradient(120deg, var(--primary-hover) 0%, var(--secondary) 100%);
+    box-shadow: var(--shadow-md), 0 12px 28px -12px rgba(0, 120, 212, 0.55);
     transform: translateY(-2px);
 }
 
@@ -941,14 +975,41 @@ section:nth-child(even) {
 }
 
 .card:hover {
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-lg), 0 20px 40px -24px rgba(0, 120, 212, 0.35);
     transform: translateY(-5px);
+    border-color: rgba(0, 120, 212, 0.25);
 }
 
 .card-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: var(--text-inverse);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
 }
+
+.card-icon .icon-svg {
+    width: 1.4em;
+    height: 1.4em;
+}
+
+/* Homepage skills grid: category colors (Azure / M365 / Power Platform / Security) */
+#skills .card:nth-child(1) .card-icon { background: var(--cat-azure); }
+#skills .card:nth-child(2) .card-icon {
+    background: conic-gradient(from 90deg, #f25022 90deg, #7fba00 90deg 180deg, #00a4ef 180deg 270deg, #ffb900 270deg);
+}
+#skills .card:nth-child(3) .card-icon { background: var(--cat-power); }
+#skills .card:nth-child(4) .card-icon { background: var(--cat-security); }
+
+#skills .card:nth-child(1):hover { border-color: rgba(0, 120, 212, 0.35); }
+#skills .card:nth-child(2):hover { border-color: rgba(242, 80, 34, 0.3); }
+#skills .card:nth-child(3):hover { border-color: rgba(116, 39, 116, 0.3); }
+#skills .card:nth-child(4):hover { border-color: rgba(16, 124, 16, 0.3); }
 
 .card-title {
     font-size: 1.5rem;
@@ -1182,13 +1243,29 @@ section:nth-child(even) {
 }
 
 .service-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: var(--primary);
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: var(--text-inverse);
+    margin: 0 auto 1.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 64px;
+    font-size: 1.75rem;
+}
+
+.service-icon .icon-svg {
+    width: 1.4em;
+    height: 1.4em;
+}
+
+/* Cards that embed a real product logo keep their own colors, no badge fill */
+.service-icon:has(img) {
+    background: none;
+    width: auto;
+    height: auto;
+    border-radius: 0;
 }
 
 .service-title {
