@@ -401,6 +401,12 @@ document.addEventListener('DOMContentLoaded', () => {
     new BlogFilter();
     initShareButtons();
 
+    // Footer copyright year - keep current automatically
+    const copyrightYear = document.getElementById('copyright-year');
+    if (copyrightYear) {
+        copyrightYear.textContent = new Date().getFullYear();
+    }
+
     // Theme toggle button
     const themeToggle = document.getElementById('theme-toggle');
     if (themeToggle) {
